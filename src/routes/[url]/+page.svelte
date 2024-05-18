@@ -1,0 +1,157 @@
+<script>
+	export let data;
+	import Tag from '../../lib/components/Tag.svelte';
+	import { cards } from "$lib/stores.js";
+
+	const target_related = 4;
+	
+	if(!data.related){
+		data.related = [];
+	}
+	//find articles that share tags with this one
+	const sorted_cards = [...$cards]
+	.sort(function(card_a, card_b){
+        let value_a = card_a.tags.filter(value => data.tags.includes(value)).length;
+        let value_b = card_b.tags.filter(value => data.tags.includes(value)).length;
+        if(value_a != value_b){
+            return value_b - value_a;
+        }
+        return card_b.tags.length - card_a.tags.length;
+    })
+	.filter(card => card.tags.filter(value => data.tags.includes(value)).length)
+	.filter(card => !data.related.includes(card.title))
+	.filter(card => card.title !== data.title);
+
+	let search="";
+
+	$: search_results = $cards
+	.filter(card => card.title.toLowerCase().includes(search.toLowerCase())
+					||card.blurb.some(line => line.toLowerCase().includes(search.toLowerCase()))
+					|| card.tags.some(tag => tag.toLowerCase().includes(search.toLowerCase())));
+	$: console.log(search_results);
+</script>
+
+<style>
+	.tags {
+        align-self: flex-start;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        color: #747474;
+    }
+	main {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+	}
+	.article {
+		grid-column: 2;
+		width: 600px;
+	}
+	.sidebar{
+		padding-top: 25px;
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	.article-line{
+		width: 160px;
+		border-bottom: 1px solid black;
+		margin-top: 10px;
+	}
+	h2 {
+		font-family: "Imprint MT Shadow";
+		font-weight: normal;
+	}
+	.article > h2 {
+		font-size: 35px;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	:global(h3) {
+		font-size: 26px;
+		font-family: "Imprint MT Shadow";
+		font-weight: normal;
+		margin-bottom: 10px;
+	}
+	:global(h3+p){
+		margin-top: 0px;
+	}
+	input {
+		outline: none;
+		border: none;
+		font-family: "Times New Roman";
+		font-size: 18px;
+		background-color: transparent;
+		border-bottom: 1px solid black;
+	}
+	:global(ul) {
+		list-style-type: circle;
+		padding-left: 20px;
+		margin-top: 5px;
+	}
+	.sidebar > h2 {
+		font-size: 20px;
+		border-bottom: 1px solid black;
+		width: 130px;
+		margin-bottom: 0px;
+	}
+	.dropdown-content {
+		display:none;
+		position:absolute;
+		border: 1px solid black;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		background: white;
+		padding: 3px;
+		transform: translateY(-1px);
+		margin-right:50px; /* makes it responsive */
+	}
+	input:focus + .dropdown-content {
+		display:block;
+	}
+	.dropdown-content > a > p {
+		margin: 1px;
+		position: relative;
+	}
+</style>
+
+<title>{data.title}</title>
+
+<main>
+	<div class="article">
+		<h2>{data.title}</h2>
+		<div class="tags">
+			{#each data.tags as tag (tag)}
+				<Tag name={tag}/>
+			{/each}
+		</div>
+		<div class="article-line"></div>
+		<svelte:component this={data.content} />
+	</div>
+	<div class="sidebar">
+		<div class="dropdown">
+			<input bind:value={search} placeholder="Search...">
+			{#if search && search_results.length}
+				<div class="dropdown-content">
+					{#each search_results as card (card.title)}
+						<a href={card.title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')}><p>{card.title}</p></a>
+					{/each}
+				</div>
+			{/if}
+		</div>
+		<h2>Related articles</h2>
+		<ul>
+			{#each data.related as title}
+				<li><a href={title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')}>{title}</a></li>
+			{/each}
+			{#each sorted_cards.slice(0,target_related - data.related.length) as card}
+				<li><a href={card.title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')}>{card.title}</a></li>
+			{/each}
+		</ul>
+	</div>
+</main>
+
+
