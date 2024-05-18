@@ -1,1 +1,0 @@
-Files & hosting for [The Whiteroom](https://the-whiteroom.github.io)
