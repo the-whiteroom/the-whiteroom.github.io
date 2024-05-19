@@ -16,7 +16,7 @@
     }
 
     $: selected_tags = Object.keys(tags).filter(k => tags[k]);
-    $: sorted_cards = $cards.sort(function(card_a, card_b){
+    $: sorted_cards = [...$cards].sort(function(card_a, card_b){
         let value_a = card_a.tags.filter(value => selected_tags.includes(value)).length;
         let value_b = card_b.tags.filter(value => selected_tags.includes(value)).length;
         if(value_a != value_b){
