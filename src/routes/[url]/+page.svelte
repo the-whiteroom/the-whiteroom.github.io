@@ -17,10 +17,11 @@
             return value_b - value_a;
         }
         return card_b.tags.length - card_a.tags.length;
-    })
-	.filter(card => card.tags.filter(value => data.tags.includes(value)).length)
-	.filter(card => !data.related.includes(card.title))
-	.filter(card => card.title !== data.title);
+    }) // sort by number of shared tags
+	.filter(card => card.tags.filter(value => data.tags.includes(value)).length) //make sure there are any related tags at all
+	.filter(card => !data.related.includes(card.title)) //remove if already occurred in related
+	.filter(card => card.title !== data.title); //remove if it's this card
+	console.log(sorted_cards);
 
 	let search="";
 
@@ -144,10 +145,10 @@
 		</div>
 		<h2>Related articles</h2>
 		<ul>
-			{#each data.related as title}
+			{#each data.related as title (title)}
 				<li><a href={title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')}>{title}</a></li>
 			{/each}
-			{#each sorted_cards.slice(0,target_related - data.related.length) as card}
+			{#each sorted_cards.slice(0,target_related - data.related.length) as card (card.title)}
 				<li><a href={card.title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')}>{card.title}</a></li>
 			{/each}
 		</ul>

@@ -102,6 +102,7 @@
     @media (max-width: 954px) { /* on small (er) devices, make the about me appear on top */
         main{
             flex-direction: column;
+            gap: 0px;
         }
     }
     @media (max-width: 703px) { /* make the cards horizontal */
