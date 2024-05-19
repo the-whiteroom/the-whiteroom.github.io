@@ -81,6 +81,7 @@
         border: none;
         background-color: transparent;
         font-size: 16px;
+        outline: none;
     }
     select:focus {
         outline: none;
