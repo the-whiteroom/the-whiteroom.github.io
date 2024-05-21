@@ -21,7 +21,6 @@
 	.filter(card => card.tags.filter(value => data.tags.includes(value)).length) //make sure there are any related tags at all
 	.filter(card => !data.related.includes(card.title)) //remove if already occurred in related
 	.filter(card => card.title !== data.title); //remove if it's this card
-	console.log(sorted_cards);
 
 	let search="";
 
@@ -100,7 +99,6 @@
 		margin-bottom: 0px;
 	}
 	.dropdown-content {
-		display:none;
 		position:absolute;
 		border: 1px solid black;
 		border-bottom-left-radius: 10px;
@@ -109,9 +107,6 @@
 		padding: 3px;
 		transform: translateY(-1px);
 		margin-right:50px; /* makes it responsive */
-	}
-	input:focus + .dropdown-content {
-		display:block;
 	}
 	.dropdown-content > a > p {
 		margin: 1px;
@@ -137,9 +132,11 @@
 			<input bind:value={search} placeholder="Search...">
 			{#if search && search_results.length}
 				<div class="dropdown-content">
-					{#each search_results as card (card.title)}
-						<a href={card.title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')}><p>{card.title}</p></a>
-					{/each}
+					{#if search}
+						{#each search_results as card (card.title)}
+							<a href={card.title.toLowerCase().replace(/[^a-z0-9 ]/g,'').trim().replace(/ /g,'-')} on:click={() => search=""}><p>{card.title}</p></a>
+						{/each}
+					{/if}
 				</div>
 			{/if}
 		</div>
