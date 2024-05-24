@@ -6,7 +6,7 @@
 <style>
     :global(body) {
         margin: 0;
-        background-image: url("$lib/assets/background.png");
+        background-image: url("$lib/assets/background.webp");
         background-size: 100%;
     }
     :global(html::-webkit-scrollbar) {
