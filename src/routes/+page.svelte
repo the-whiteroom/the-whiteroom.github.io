@@ -113,6 +113,10 @@
 </style>
 
 <title>The Whiteroom</title>
+<meta content="The Whiteroom" property="og:title" />
+<meta content="The TTRPG blog that does the math." property="og:description" />
+<meta content="https://the-whiteroom.github.io/" property="og:url" />
+<meta content="#ffffff" data-react-helmet="true" name="theme-color" />
 <main>
     <div id="article-wrapper">
         <div id="search">
