@@ -120,6 +120,9 @@
 <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
 <meta content="{logo}" property="og:image" />
 
+<meta name="keywords" content="D&D, 5e, D&D 5e, The Whiteroom, Optimisation, Character building, Blog, character creation">
+<meta name="description" content="The Whiteroom, the TTRPG blog that does the math.">
+
 <main>
     <div id="article-wrapper">
         <div id="search">
