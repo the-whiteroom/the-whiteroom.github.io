@@ -32,7 +32,7 @@
     }
 </style>
 
-<button class={type === "+" ? "inactive" : ""} on:click style={type ? "cursor: pointer" : ""}>
+<button class={type === "+" ? "inactive" : ""} on:click style={type ? "cursor: pointer" : ""} disabled = {type ? "" : "a"}>
     {#if type === "x"}
         <p>{name}</p>
         <img src={x} width="17px" height="17px" alt="x"/>
