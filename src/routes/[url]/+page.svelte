@@ -126,7 +126,7 @@
 </style>
 
 <title>{data.title}</title>
-<meta content="{data.title} The Whiteroom" property="og:title" />
+<meta content="{data.title} - The Whiteroom" property="og:title" />
 <meta content="The TTRPG blog that does the math." property="og:description" />
 <meta content="https://the-whiteroom.github.io/" property="og:url" />
 <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
