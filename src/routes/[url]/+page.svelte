@@ -112,6 +112,17 @@
 		margin: 1px;
 		position: relative;
 	}
+	@media (max-width: 822px){
+		main {
+			display: flex;
+			flex-direction: column;
+		}
+		.article, .sidebar {
+			width: auto;
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+	}
 </style>
 
 <title>{data.title}</title>
