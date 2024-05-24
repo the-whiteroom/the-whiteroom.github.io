@@ -2,7 +2,7 @@
 	export let data;
 	import Tag from '../../lib/components/Tag.svelte';
 	import { cards } from "$lib/stores.js";
-	import logo from '$lib/assets/logo.svg';
+	import logo from '$lib/assets/logo.png';
 
 	const target_related = 4;
 	

@@ -4,6 +4,7 @@
     import plus from '$lib/assets/plus.svg';
     import Card from "../lib/components/Card.svelte";
     import { cards } from "../lib/stores.js";
+    import logo from '$lib/assets/logo.png';
 
     let tags = {
         "D&D 5e": true,
@@ -117,6 +118,8 @@
 <meta content="The TTRPG blog that does the math." property="og:description" />
 <meta content="https://the-whiteroom.github.io/" property="og:url" />
 <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+<meta content="{logo}" property="og:image" />
+
 <main>
     <div id="article-wrapper">
         <div id="search">
