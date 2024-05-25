@@ -9,7 +9,7 @@ related:
 - Medium vs heavy armor
 - "Rogue: if confirmation bias was a class"
 ---
-What constitutes good damage is a long-running debate in the 5e community, due to differing perspectives and the lack of an agreed-upon reference point. Consequently, a simple way to compare damage is needed.
+Without an agreed-upon reference, what constitutes good damage is a common point of debate. Consequently, a simple way to compare damage is needed.
 
 ### Baselines
 Baselines are simple builds that are easy to calculate damage for, and are used as references to get an understanding of how good another build’s damage is. 
@@ -19,7 +19,7 @@ One important baseline is the warlock baseline: a subclassless Warlock, prioriti
 Dedicated damage dealers such as fighters are held to a much higher standard, as their sole contribution to a fight is damage. One simple and relatively effective build plan for a dedicated damage dealer is the Sharpshooter and Crossbow Expert feats with a Hand Crossbow and the Archery fighting style (CBE/SS). Reaching DPR values over 40% higher than the Warlock baseline, this is a very useful baseline to compare dedicated damage dealers to. Another build that’s frequently used as an alternative to CBE/SS is the Great Weapon Master and Polearm Master feats alongside a Glaive or Halberd. However, this has some major drawbacks, chiefly that it is harder to calculate DPR for due to the difficulty in estimating the frequency of opportunity attacks, and has poor durability.
 
 ### Why CBE+SS fighter is not the most optimized build
-Exceeding the Fighter baseline is trivially achieved, such as by picking a subclass or multiclassing. Many dedicated damage dealers will multiclass heavily to avoid dead levels, thereby boosting their damage beyond the Fighter baseline. Some particularly potent options include:
+Exceeding the Fighter baseline is trivial, such as by picking a subclass or multiclassing. Many dedicated damage dealers will multiclass heavily to avoid dead levels, thereby boosting their damage beyond the Fighter baseline. Some particularly potent options include:
 - Gloom Stalker 3-5 (Umbral Sight, Dread Ambusher, Pass Without Trace)
 - Battle Master 3-4 (Action Surge, Precision Attack)
 - Echo Knight 3+ (Manifest Echo to make your melee attacks functionally ranged, Unleash Incarnation, Action Surge)
