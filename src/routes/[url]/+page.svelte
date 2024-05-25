@@ -126,6 +126,9 @@
 			margin-right: 30px;
 		}
 	}
+	.sidebar li + li {
+		margin-top: 5px;
+	}
 </style>
 
 <svelte:head>
@@ -135,7 +138,7 @@
 	<meta content="https://the-whiteroom.github.io/" property="og:url" />
 	<meta content="#ffffff" data-react-helmet="true" name="theme-color" />
 	<meta content="{logo}" property="og:image" />
-	<meta name="description" content="Homepage of The Whiteroom, the TTRPG blog that does the math. A TTRPG optimisation blog with a focus on D&D 5e and Pathfinder 2e."/>
+	<meta name="description" content="A blog article on The Whiteroom, the TTRPG blog that does the math. A TTRPG optimisation blog with a focus on D&D 5e and Pathfinder 2e."/>
 </svelte:head>
 
 <main>
