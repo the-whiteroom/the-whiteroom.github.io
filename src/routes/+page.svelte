@@ -30,6 +30,8 @@
     let sort;
 
     $: displayed_cards = sort === "Relevant" ? sorted_cards : $cards;
+
+    let tags_hovered = false;
 </script>
 
 <style>
@@ -51,10 +53,10 @@
         align-items: center;
         color: #747474;
     }
-    .tags:hover > img {
+    .tags:hover > .plus {
         display: none;
     }
-    :global(.tags:not(:hover) > img ~ *) {
+    :global(.tags:not(:hover) > .plus ~ button) {
         opacity: 0;
     }
     #search {
@@ -111,6 +113,12 @@
             gap: 20px;
         }
     }
+    .plus {
+        background-color: transparent;
+        margin: none;
+        padding: none;
+        border: none;
+    }
 </style>
 
 <svelte:head>
@@ -141,10 +149,12 @@
                             <Tag name={name} type="x" on:click={()=>{tags[name]=false;tags=tags;}}/>
                         {/if}
                     {/each}
-                    <img src={plus} width="17px" height="17px" alt="+"/>
+                    <button class="plus" on:click={()=>tags_hovered=!tags_hovered}>
+                        <img src={plus} width="17px" height="17px" alt="+" />
+                    </button>
                     {#each Object.entries(tags) as [name,selected] (name)}
                         {#if !selected}
-                            <Tag name={name} type="+" on:click={()=>{tags[name]=true;tags=tags;}}/>
+                            <Tag name={name} type="+" force_visibility={tags_hovered} on:click={()=>{tags[name]=true;tags=tags;}}/>
                         {/if}
                     {/each}
                 </div>

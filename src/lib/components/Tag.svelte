@@ -3,6 +3,7 @@
     import plus from '$lib/assets/plus.svg';
     export let name;
     export let type = "";
+    export let force_visibility=false;
 </script>
 
 <style>
@@ -30,9 +31,12 @@
     .inactive p {
         color: #aaa;
     }
+    .visible {
+        opacity: 1!important; /* override global styling */
+    }
 </style>
 
-<button class={type === "+" ? "inactive" : ""} on:click style={type ? "cursor: pointer" : ""} disabled = {type ? "" : "a"}>
+<button class={(type === "+" ? "inactive" : "") + (force_visibility ? " visible" : "")} on:click style={type ? "cursor: pointer" : ""} disabled = {type ? "" : "a"}>
     {#if type === "x"}
         <p>{name}</p>
         <img src={x} width="17px" height="17px" alt="x"/>
