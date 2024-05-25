@@ -121,6 +121,7 @@
     <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
     <meta content="{logo}" property="og:image" />
     <meta name="description" content="Homepage of The Whiteroom, the TTRPG blog that does the math. A TTRPG optimisation blog with a focus on D&D 5e and Pathfinder 2e."/>
+    <meta name="google-site-verification" content="DkejZNsfOfNQupsu3vf2pHlLkzLjsMVWkwgjpBX0NRg" />
 </svelte:head>
 
 <main>
