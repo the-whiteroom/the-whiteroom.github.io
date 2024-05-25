@@ -41,7 +41,7 @@
     }
     h2 {
         font-weight: normal;
-        font-family: "Imprint MT Shadow";
+        font-family: "Imprint MT Shadow", Times, serif;
         font-size: 26px;
     }
 

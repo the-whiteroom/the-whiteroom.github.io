@@ -4,7 +4,7 @@
 
 <style>
     h1 {
-        font-family: "Imprint MT Shadow";
+        font-family: "Imprint MT Shadow", Times, serif;
         font-weight: normal;
         font-size: 52px;
         text-align: center;

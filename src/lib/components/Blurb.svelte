@@ -7,7 +7,7 @@
     h2 {
         font-size: 26px;
         font-weight: normal;
-        font-family: "Imprint MT Shadow";
+        font-family: "Imprint MT Shadow", Times, serif;
         text-align: center;
     }
     h2::after {

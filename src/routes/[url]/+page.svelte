@@ -65,7 +65,7 @@
 		margin-top: 10px;
 	}
 	h2 {
-		font-family: "Imprint MT Shadow";
+		font-family: "Imprint MT Shadow", Times, serif;
 		font-weight: normal;
 	}
 	.article > h2 {
@@ -75,7 +75,7 @@
 	}
 	:global(h3) {
 		font-size: 26px;
-		font-family: "Imprint MT Shadow";
+		font-family: "Imprint MT Shadow", Times, serif;
 		font-weight: normal;
 		margin-bottom: 10px;
 	}
