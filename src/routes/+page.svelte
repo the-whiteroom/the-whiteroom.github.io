@@ -125,7 +125,7 @@
         <div id="search">
             <input bind:value={search} placeholder="Search...">
 
-            <select bind:value={sort}>
+            <select aria-label="sort" bind:value={sort}>
                 <option>Relevant</option>
                 <option>Recent</option>
             </select>
