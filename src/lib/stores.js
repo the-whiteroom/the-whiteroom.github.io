@@ -77,4 +77,11 @@ export const cards = writable([
         ],
         tags : ['D&D 5e', 'Theory']
     },
+    {
+        title : "Hold Person: An overrated spell",
+        blurb : [
+            "link to article on action economy",
+        ],
+        tags : ['D&D 5e', 'Spells']
+    },
 ])
