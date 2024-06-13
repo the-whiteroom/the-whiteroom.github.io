@@ -29,7 +29,14 @@
 	.filter(card => card.title.toLowerCase().includes(search.toLowerCase())
 					||card.blurb.some(line => line.toLowerCase().includes(search.toLowerCase()))
 					|| card.tags.some(tag => tag.toLowerCase().includes(search.toLowerCase())));
-	$: console.log(search_results);
+
+	//get the blurb for this article
+	let description = "The TTRPG blog that does the math.";
+	$cards.forEach(function check(card){
+		if(card.title==data.title){
+			description = card.blurb + " \nRead more on The Whiteroom, the TTRPG blog that does the math."
+		}
+	});
 </script>
 
 <style>
@@ -134,7 +141,7 @@
 <svelte:head>
 	<title>{data.title}</title>
 	<meta content="{data.title} - The Whiteroom" property="og:title" />
-	<meta content="The TTRPG blog that does the math." property="og:description" />
+	<meta content={description} property="og:description" />
 	<meta content="https://the-whiteroom.github.io/" property="og:url" />
 	<meta content="#ffffff" data-react-helmet="true" name="theme-color" />
 	<meta content="{logo}" property="og:image" />
