@@ -6,12 +6,36 @@ tags:
 related:
 - Misconceptions about action economy
 ---
+<script>
+    import { Line } from 'svelte-chartjs';
+    import { data, options } from '$lib/data/spiritual-weapon.js';
+    import {
+    Chart as ChartJS,
+    Title,
+    Tooltip,
+    Legend,
+    LineElement,
+    LinearScale,
+    PointElement,
+    CategoryScale,
+  } from 'chart.js';
+
+  ChartJS.register(
+    Title,
+    Tooltip,
+    Legend,
+    LineElement,
+    LinearScale,
+    PointElement,
+    CategoryScale
+  );
+</script>
 *Spiritual Weapon* is one of the most iconic Cleric spells in D&D 5e. But does it live up to its reputation as a potent and versatile offensive spell? Not at all.
 
 ### Underwhelming damage
-*Spiritual Weapon*, cast at 2nd level, deals 4.875 damage per round, and for every two levels it’s upcast, it does 2.925 more. Regardless of level, this is an insignificant amount of damage, barely enough to even scratch a monster.
+*Spiritual Weapon*, cast at 2nd level, deals 5.1 damage per round, and for every two levels it’s upcast, it does 3.15 more. Regardless of level, this is an insignificant amount of damage, barely enough to even scratch a monster.
 
-[graph of damage as % monster HP]
+<Line {data} {options}/>
 
 Additionally, spells that deal damage over time are far inferior to spells that deal all their damage at once, since the latter kill enemies much faster.
 
