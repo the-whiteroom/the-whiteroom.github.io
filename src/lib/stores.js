@@ -45,7 +45,9 @@ export const cards = writable([
     {
         title : "Stop casting Spiritual Weapon",
         blurb : [
-            "link to article on action economy",
+            "*Spiritual Weapon* is one of the most iconic Cleric spells in D&D 5e.",
+            "But does it live up to its reputation as a potent and versatile offensive spell?",
+            "Not at all.",
         ],
         tags : ['D&D 5e', 'Spells']
     },

@@ -86,7 +86,16 @@
 		font-weight: normal;
 		margin-bottom: 10px;
 	}
+	:global(h4) {
+		font-size: 20px;
+		font-family: "Imprint MT Shadow", Times, serif;
+		font-weight: normal;
+		margin-bottom: 8px;
+	}
 	:global(h3+p){
+		margin-top: 0px;
+	}
+	:global(h4+p){
 		margin-top: 0px;
 	}
 	input {
