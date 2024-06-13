@@ -52,7 +52,7 @@ However, *Hold Person* isn't just worse than the good options, it's a poor spell
 On top of all that, a spell being concentration means that every single time you get hit, you have the chance to lose the spell, which was already a huge problem with *Hold Person* that's only made worse.
 
 ### Competes for preparation and actions
-Opportunity cost is one of the most important considerations for any caster - is what I'm doing worth it, over what I could have done? The opportunity cost of preparing *Hold Person* is incredibly high, particularly when there's so many other good options available. Preparing or learning Hold Person, particularly for classes that don't know many spells like Sorcerer, can be very costly.
+Opportunity cost is one of the most important considerations for any caster - is what I'm doing worth it, over what I could have done? The opportunity cost of preparing *Hold Person* is incredibly high, particularly when there's so many other good options available. Preparing or learning *Hold Person*, particularly for classes that don't know many spells like Sorcerer, can be very costly.
 
 Furthermore, actions are important. In 5e, you've only got one per round, so you've got to make the most of it - particularly on your first one or two turns, when the fate of an encounter is typically decided. Spending these actions on a spell as ineffective as Hold Person isn't just bad play, it's actively dangerous.
 

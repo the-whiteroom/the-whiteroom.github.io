@@ -80,7 +80,7 @@ export const cards = writable([
     {
         title : "Hold Person: An overrated spell",
         blurb : [
-            "link to article on action economy",
+            "Hold Person is often touted as a fantastic spell. But is it really that great?",
         ],
         tags : ['D&D 5e', 'Spells']
     },
