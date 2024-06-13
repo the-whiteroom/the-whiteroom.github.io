@@ -1,9 +1,14 @@
 export const data = {
-    labels: [1, 2, 3, 4],
+    labels: [0, 1, 2, 3, 4],
     datasets: [
       {
         label: "Hold Person",
-        data: [0.5, 0.25, 0.125, 0.0625],
+        data: [0.5, 0.25, 0.125, 0.0625, 0.03125],
+        cubicInterpolationMode: 'monotone',
+        borderColor: 'rgb(0,0,0)',
+        backgroundColor: '#fff',
+        pointRadius: 4,
+        pointHoverRadius: 5,
       },
     ],
 };
@@ -21,13 +26,17 @@ export const options = {
         x: {
             title: {
             display: true,
-            text: 'Turns elapsed'
+            text: 'Enemy turns elapsed',
             }
         }
     },
     plugins: {
         legend: {
             display: false,
+        },
+        title: {
+            display: true,
+            text: "Effectiveness of Hold Person over an encounter"
         }
     }
 };
