@@ -34,7 +34,7 @@
 	let description = "The TTRPG blog that does the math.";
 	$cards.forEach(function check(card){
 		if(card.title==data.title){
-			description = card.blurb + " \nRead more on The Whiteroom, the TTRPG blog that does the math."
+			description = card.blurb;
 		}
 	});
 </script>
