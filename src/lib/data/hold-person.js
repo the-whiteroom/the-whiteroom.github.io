@@ -11,6 +11,8 @@ export const data = {
 export const options = {
     scales: {
         y: {
+            min: 0,
+            max: 1,
             title: {
             display: true,
             text: 'Probability of enemy still being affected'
