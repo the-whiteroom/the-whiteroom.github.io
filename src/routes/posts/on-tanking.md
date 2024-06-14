@@ -5,7 +5,7 @@ tags:
 - Theory
 related:
 - What is a damage dealer, anyway?
-- Medium vs heavy armor
+- "A weighty decision: Medium vs Heavy Armor"
 ---
 <script>
     import { Line } from 'svelte-chartjs';
