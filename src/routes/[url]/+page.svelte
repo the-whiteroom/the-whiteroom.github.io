@@ -40,6 +40,7 @@
 </script>
 
 <style>
+	@import '$lib/styles/post.css';
 	.tags {
         align-self: flex-start;
         display: flex;

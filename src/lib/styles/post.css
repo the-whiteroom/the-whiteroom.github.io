@@ -1,0 +1,9 @@
+.article a, .article a:visited {
+    color:black;
+    text-decoration: none;
+    border-bottom: 1px solid #888;
+}
+
+.article a:hover {
+    border-bottom: 1px solid black;
+}

@@ -46,8 +46,10 @@ The fighter can also operate at range, not having to worry about being unable to
 
 <Line {data} {options}/>
 
+*The Paladin is a Variant Human, taking Polearm Master at level 1, and then boosting Strength at every opportunity. Great Weapon Master is a decrease to nova DPR, so this Paladin opts to avoid it.*
+
 ### Dipping for Smite is even worse
-In theory, it sounds like a good idea. Smite scales off slots, so higher-level slots make you better at smiting - and it's true, they do! However, every single one of those high-level slots could have been spent on casting spells - for example, a 3rd-level slot could have been spent on *Fireball* or *Conjure Animals*, dealing far more damage than a Smite. And that's not even getting into the really powerful spells like *Sleet Storm* or *Hypnotic Pattern*.
+In theory, it sounds like a good idea. Smite scales off slots, so higher-level slots make you better at smiting - and it's true, they do! However, every single one of those high-level slots could have been spent on casting spells - for example, a 3rd-level slot could have been spent on *Fireball* or *Conjure Animals*, dealing far more damage than a Smite. And that's not even getting into the really powerful spells like *Sleet Storm* or *Hypnotic Pattern*, which can decimate an encounter in a single turn.
 
 ### Crit-smiting defeats the entire point of burst damage
-Burst damage is good because you can kill enemies on-demand, before they can hurt you. Waiting for a rare, one-in-twenty event to occur before you unload a Smite defeats this entirely.
+Burst damage is good because you can kill enemies on-demand, before they can hurt you. Waiting for a rare, one-in-twenty event to occur before you unload a Smite defeats this entirely. While it's a (very small) increase to average DPR over smiting in bursts, this rare event isn't enough to justify this strategy - particularly given that you have no control whatsoever over when you crit.
