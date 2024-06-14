@@ -1,5 +1,5 @@
 ---
-title: Medium vs heavy armor
+title: "A weighty decision: Medium vs Heavy Armor"
 tags:
 - D&D 5e
 - Theory

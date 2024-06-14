@@ -10,7 +10,7 @@ export const cards = writable([
         tags : ['D&D 5e', 'Theory']
     },
     {
-        title : "Medium vs heavy armor",
+        title : "A weighty decision: Medium vs Heavy Armor",
         blurb : [
             "Ever wondered why most characters are better off wearing medium armor?",
             "Or which are the exceptions to this rule?",
@@ -45,7 +45,7 @@ export const cards = writable([
     {
         title : "Stop casting Spiritual Weapon",
         blurb : [
-            "*Spiritual Weapon* is one of the most iconic Cleric spells in D&D 5e.",
+            "Spiritual Weapon is one of the most iconic Cleric spells in D&D 5e.",
             "But does it live up to its reputation as a potent and versatile offensive spell?",
             "Not at all.",
         ],

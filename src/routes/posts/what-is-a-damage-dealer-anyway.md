@@ -6,7 +6,7 @@ tags:
 related:
 - Ranged vs melee
 - On tanking
-- Medium vs heavy armor
+- "A weighty decision: Medium vs Heavy Armor"
 - "Rogue: if confirmation bias was a class"
 ---
 
