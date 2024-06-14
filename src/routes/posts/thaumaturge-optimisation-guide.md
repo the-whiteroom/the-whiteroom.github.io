@@ -161,7 +161,7 @@ The alternate ability boost rules have made the elf a stand-out in optimisation 
 - <Rating content="Tree Climber" ratings={[1]}/> You gain a mediocre climb speed. The thaumaturge has no need for this sort of climbing, especially by this level.
 
 **13<sup>th</sup> Level Elf Feats:**
-- <Rating content="Avenge Ally" ratings={[3]}/> If an ally is dying, make a strike with the benefits of true strike for one action. This is a fantastic effect, but it does require a dying ally. You may be able to cheese it depending on the definition of ally, but that’s hard to fly. 
+- <Rating content="Avenge Ally" ratings={[3]}/> If an ally is dying, make a strike with the benefits of Sure Strike for one action. This is a fantastic effect, but it does require a dying ally. You may be able to cheese it depending on the definition of ally, but that’s hard to fly. 
 - <Rating content="Universal Longevity" ratings={[2]}/> You gain expert level skills on demand once per day. With this much investment into the feat path you could have probably just picked up the Tome instead.
 - <Rating content="Wandering Heart" ratings={[2]}/> You swap your elf heritage to one appropriate to the environment. If you chose one of those heritages your campaign is probably themed around a particular terrain, but by this level travelling around the world or other planes is common or about to be common, so this can be somewhat useful; You could probably have just bought a relevant magic item though.
 
