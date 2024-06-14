@@ -86,4 +86,11 @@ export const cards = writable([
         ],
         tags : ['D&D 5e', 'Spells']
     },
+    {
+        title : "Thaumaturge optimisation guide",
+        blurb : [
+            "[todo]",
+        ],
+        tags : ['PF2e', 'Classes']
+    },
 ])
