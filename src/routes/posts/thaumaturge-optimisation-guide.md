@@ -453,3 +453,158 @@ If you want to get into the melee, you can do much worse than the orc. It has a 
 
 **17<sup>th</sup> Level Orc Feats:**
 - <Rating content="Rampaging Ferocity" ratings={[4]}/> A fantastic ability to activate as long as you are within reach of the foe who nearly downed you. Thaumaturges love free stuff, and a free strike is one of the best things you can give them. Look to maximise your reach to get the most value out of this feat.
+
+#### Versatile Heritages
+You lose your heritage bonus in exchange for (usually) low light vision and an expanded feat pool. Sometimes that’s worth it, sometimes it is not. These heritages can be a good way to make up the difference if the rating is reduced by a mediocre feat selection, as is the case for leshies.
+
+The remaster has changed it such that that aiuvarin and the dromaar (what were previously known as half-elfs and half-orcs respectively) are now available as common ancestries respectively for any ancestry, not just the human. I’m not… entirely sure how this interacts with certain ancestries now becoming core, namely the leshy, but RAW nothing stops it so just work with your GM to work out a sensible explanation. Player Core has also given vague advice on the existence of Mixed ancestries, but again, it’s basically just up to you and the GM to work that out.
+
+Additionally, many uncommon heritages have lineage feats at level 1, tying you to a specific ancestor or type of creature from which you are descended. You can only have one lineage feat and you can only pick them at level 1, and they can’t be retrained, so keep that in mind.
+
+<Rating content="Aiuvarin" ratings={[3]}/><br>
+The elf feat list is a fantastic choice on nearly any ancestry. If your base class has a more reliable base chassis than the elf, such as the orc or gnome, this is a decent pick to improve your ability in both ranged and melee. The only reason this isn’t blue is because of the elf’s powerful base speed and easier access to the Ancient Elf heritage, but this is still a great pick. The unique aiuvarin feats aren’t much to write home about unless you can take Elf Avatism for Ancient Elf in a free archetype game.
+
+<p></p><Rating content="Changeling (U)" ratings={[3]}/><br>
+If you really want to make your character’s mommy issues a part of their mechanics, the changeling is pretty good for it. Children of hags turning into thaumaturges to ward off the Call and hunt down evil creatures is quite fitting, and there’s some pretty good stuff here, even if you have to wade through some garbage to get to it.
+
+**1<sup>st</sup> Level Changeling Lineage Feats:**
+- <Rating content="Brine May" ratings={[1]}/> You’re a bit better at Swim checks. 
+- <Rating content="Callow May" ratings={[1]}/> You get a mediocre skill feat and a situational combat bonus if you roll deception for initiative, which is incredibly unlikely to happen.
+- <Rating content="Dream May" ratings={[1]}/> Very situational. You are unlikely to face the conditions this lessens at early levels and by the mid-level mark your party can probably just buy/prepare one of the condition cleanser spells like Sound Body and Clear Mind.
+- <Rating content="Moon May" ratings={[3]}/> Standard ancestry cantrip.
+- <Rating content="Slag May" ratings={[1]}/> If your GM allows you to use this with your hands full  
+(for example, using claws with your legs) this is <Rating content="green" ratings={[3]} bold={false} stars={false}/>. Free hand grappling and applying cold iron (which is near impossible to apply to unarmed strikes unless you are a monk) to your unarmed attacks is pretty good, and the damage is respectable.
+- <Rating content="Snow May" ratings={[1]}/> Situational and mediocre.
+- <Rating content="Veil May" ratings={[2]}/> Your perception is good, but your deception can be even better. Donning a disguise quickly isn’t fantastic but it can be useful in subterfuge missions if you’ve been made and need to escape quickly. 
+- <Rating content="Virga May" ratings={[2]}/> Electric Arc is a reliable cantrip, and it’s an occult cantrip instead of being arcane or primal, which is neat.
+
+**1<sup>st</sup> Level Changeling Feats:**
+- <Rating content="Changeling Lore" ratings={[2]}/> Hag Lore is a lot more useful than most ancestry lores, and this also gets you Deception and a free skill. 
+- <Rating content="Hag Claws" ratings={[1]}/> Just use your fists. You also likely can’t use these attacks since they require claws that likely are on your hands, which are full.
+- <Rating content="Hag's Sight" ratings={[3]}/> Standard ancestry darkvision.
+- <Rating content="Maiden's Mending" ratings={[2]}/> You’re unlikely to have many of these but if you do (such as by taking scroll thaumaturgy) this can be a decent booster.
+
+**5<sup>th</sup> Level Changeling Feats:**
+- <Rating content="Called" ratings={[4]}/> Name one effect that calls for a will save that doesn’t have the mental trait. I struggle to think of any that aren’t player facing focus spells or some illusion spells. This is, effectively, a permanent circumstance bonus to your will saves. You also get to turn successes against control effects into critical successes, but that’s both redundant by level 9 and utterly overshadowed by the former effect.
+- <Rating content="Cunning Hag" ratings={[2]}/> Maybe you want to open a door mid combat. 
+- <Rating content="Favourable Winds" ratings={[1]}/> Who looked at this and thought “this is a great and useful ability that’s completely balanced” and put it in the same section as the Called feat?
+- <Rating content="Mistchild" ratings={[3]}/> This is a useful bonus for thaumaturges who like to sneak around, and also synergises with many spells and the Mirror’s IV ability well. Be sure to keep your AC up as much as possible though.
+
+**9<sup>th</sup> Level Changeling Feats:**
+- <Rating content="Accursed Claws" ratings={[1]}/> You generally can’t use claws and the damage is too mediocre for such a high level effect.
+- <Rating content="Invoke The Elements" ratings={[3]}/> Requires a lineage feat; the best lineage feats are Virga or Veil May, but if you are one of the other two this is a great way to feel better about your situational choice. A powerful defensive buff for both melee and dexturges, punishing enemies for getting adjacent to you by taking some modest damage with a save against your solid class DC, and forcing concealment on reach using foes and ranged enemies who make attacks against you. The only issue is that it takes 2 actions to activate, but it’s a great defensive bonus anyway. Since it lacks the usual text saying otherwise, you are able to use this concealment to hide, but not to get undetected. Synergises well with the Mistchild feat. 
+- <Rating content="Mother's Mindfulness" ratings={[1]}/> Honestly? I’d rather pick up the Bell.
+- <Rating content="Occult Resistance" ratings={[2]}/> Requires expert in Occultism. The bonus is quite solid, but a lot of offensive occult effects force will saves anyway, and many of those have the mental trait, so you could have probably just taken Called instead for a much wider ranging effect. Still decent if your campaign is focused around occult mysteries and the like.
+
+**13<sup>th</sup> Level Changeling Feats:**
+- <Rating content="Hag Magic" ratings={[3]}/> I enjoy clairvoyance as a scouting tool, and augury is always a great pick up. Most of the other spells here are whatever, but you can still find something nice.
+- <Rating content="Spiteful Rake" ratings={[1]}/> You can’t use claws and you never have hands free.
+
+**17<sup>th</sup> Level Changeling Feats:**
+- <Rating content="Crone's Cruelty" ratings={[1]}/> Single Target Incapacitation spell that doesn’t heighten. Pass.
+- <Rating content="Stormy Elements" ratings={[3]}/> Use Invoke The Elements every encounter. A fantastic bonus to your defensive capabilities.
+
+<p></p><Rating content="Dromaar" ratings={[3]}/><br>
+The dromaar aren’t bad, I’m just not sure why you wouldn’t play a normal orc instead. You get the orc’s solid base chassis and a heritage that actually gives you something from the get-go (or even just take another versatile heritage) on top of already accessing its feat list. Maybe you’d like it on a hardy gnome?
+
+<p></p><Rating content="Nephilim" ratings={[3]}/><br>
+This new heritage takes the place of all the former planar heritages, though the aphorite and ganzi feats have not been reprinted in Player Core. As of current, it includes all the feats belonging to both the Aasimar and the Tiefling, either reprinted from the APG or changed up a bit. In general this ancestry is most powerful when accessing the fiendish feats, as they provide some powerful bonuses. PFS has ruled that you can use aasimar and tiefling feats as a nephilim, though you may only pick one or the other and can’t treat them interchangeably (though weirdly you can take something like an angelkin lineage and tiefling feats); At present, I will only be reviewing the feats presented in Player Core for the Nephilim.
+
+**1<sup>st</sup> Level Nephilim Lineage Feats:**
+- <Rating content="Angelkin" ratings={[2]}/> Mediocre skill and some extra languages. Could be nice for a face.
+- <Rating content="Grimspawn" ratings={[3]}/> General feats for an ancestry feat is pretty good, and Diehard’s always nice to have. 
+- <Rating content="Hellspawn" ratings={[3]}/> A modest set of bonuses. Free skill feats are always neat, and Lie to Me is pretty good, though not super necessary, especially with your high perception.
+- <Rating content="Lawbringer" ratings={[2,3]}/> Standard ancestry emotion resistance.
+- <Rating content="Musetouched" ratings={[2]}/> You’re better at escaping. You shouldn’t be escaping that much.
+- <Rating content="Pitborn" ratings={[4]}/> Not only is athletics a fantastic skill on every thaumaturge, this gives you a flexible skill feat for it. Free skill feats are a fantastic bonus for skill monkey turges, and this is unparalleled flexibility for a non-human ancestry feat.
+
+**1<sup>st</sup> Level Nephilim Feats:**
+- <Rating content="Bestial Manifestation" ratings={[3]}/> Standard ancestry unarmed attacks. I’d pick the hoof or the tail for their reliable damage type.
+- <Rating content="Halo" ratings={[3]}/> You have a light spell affixed to you that you can activate or deactivate with a single action.
+- <Rating content="Nephilim Eyes" ratings={[3]}/> Standard ancestry darkvision.
+- <Rating content="Nephilim Lore" ratings={[2]}/> This is surprisingly flexible as lore feats go. I’d give it some consideration if you’re fighting creatures from a certain plane or in that plane often.
+- <Rating content="Nimble Hooves" ratings={[4]}/> Movement speed bonuses are always fantastic. Won’t stack with feats like Nimble Elf.
+
+**5<sup>th</sup> Level Nephilim Feats:**
+- <Rating content="Blessed Blood" ratings={[1]}/> Funnily enough, you can take this feat regardless of lineage; Your fiendish blood is certainly most holy. The damage is mediocre and has an incredibly situational trigger, and you’re incredibly unlikely to be the party crafter.
+- <Rating content="Extraplanar Supplication" ratings={[2]}/> Cast bless or bane. Sustaining either is going to be a heavy action tax on the thaumaturge’s already strained action economy. You already have reliable access to magic items and status bonuses anyway. Don’t even think about picking Bane.
+- <Rating content="Nephilim Resistance" ratings={[3]}/> Standard flat ancestry resistance. Choose fire.
+- <Rating content="Scion of many Planes" ratings={[2]}/> You almost never want this. I’d only take it if you wanted a lineage feat but also wanted Nephilim Eyes, since you don’t actually need a lineage feat to qualify for this.
+- <Rating content="Skillful Tail" ratings={[2]}/> Maybe you want to open a door mid combat. Maybe you want to open a door mid combat.
+
+**9<sup>th</sup> Level Nephilim Feats:**
+- <Rating content="Celestial magic" ratings={[1]}/> Frankly, none of these spells are worth a 9th level feat. If you really want to pick this up, only choose Everlight and Humanoid Form; Everything else requires a spellcasting proficiency you don’t have or scaling the feat doesn’t provide.
+- <Rating content="Divine Countermeasures" ratings={[2]}/> You gain a bonus on saving throws against divine effects.The Divine tradition is a common tool of many fiends and undead, as well as certain dragons. Even if it’s a bit high level, a flat circumstance bonus is quite powerful, and this is a great pick if divine enemies are common in your campaign.
+- <Rating content="Divine Wings" ratings={[3]}/> 9/17 ancestry flight progression.
+- <Rating content="Fiendish magic" ratings={[3]}/> Invisibility and See the Unseen are your best picks and they’re both solid options. Everything else doesn’t heighten at all and becomes near-useless in short order. You might like False Vitality for its long duration.
+
+**13<sup>th</sup> Level Nephilim Feats:**
+- <Rating content="Celestial Mercy" ratings={[1]}/> Why do these feats provide spells that need to scale to stay relevant and then cannot scale at all? 
+- <Rating content="Slip Sideways" ratings={[4]}/> Fifth rank Translocate is a powerful get out of jail free card. Break out of nearly every bad situation you’re in, be it a jail cell, a monster’s stomach, or an awkward dinner with your partner’s parents. Unfortunately locked to the fiendish lineages, which is weird given a lot of celestials can access this feat too. You might take Scion of Many Planes or retrain for it just to access this feat.
+- <Rating content="Summon Nephilim Kin" ratings={[2,3,4]}/> You summon creatures appropriate to your lineage. Don’t listen to anyone who tells you summon spells are bad: your summons are useless for combat, but they provide impressive utility. Many heritages offer low-level summons that can fly, turn invisible, and be effective scouts, though you must be quick with how you use them given the one minute time limit.<br>
+The best options are the Hellspawn, for their utility options and access to fifth level translocate through the zebub and barbazu, and the Lawbringer, for their archons access to translocate, flight, and healing support. <br>
+The Musetouched also provides you with the gancanagh, which empowers allies with heroism and inspiring makeout sessions; their long durations means you can summon a gancanagh, let your party get their kisses in, dismiss the azata and still enjoy the benefits in combat. They can also translate all languages. The Pitborn also has the vermlek, which can help you hide bodies and remove or fake evidence, and the brimorak can cast translocate and fireball, making them good messengers, fast couriers, and hilarious distractions.
+
+**17th Level Nephilim Feats:**
+- <Rating content="Divine Declaration" ratings={[1]}/> Offensive spellcasting.
+- <Rating content="Eternal Wings" ratings={[3]}/> 9/17 ancestry flight progression.
+
+### Proficiencies and Advancement:
+I rank these proficiencies relative to other classes. The thaumaturge’s progression means they’re good at a lot more things than you’d think.
+- <Rating content="Key Attribute" ratings={[3]}/> Charisma is your key attribute. It fuels just about every class feature the thaumaturge has, but outside of investing into the charisma based skills it holds little intrinsic value.
+- <Rating content="Hit Points" ratings={[2]}/> You get eight hit points per level. Your hit points are better than most dedicated spellcasters, but worse than most frontline martial characters. You do have easy access to defensive abilities however, which can help bridge the gap, on top of your above average save progression. 
+- <Rating content="Perception" ratings={[3]}/> The Thaumaturge’s perception progression is above average. You start at expert and increase to master at ninth level. The thaumaturge greatly benefits from going first due to their vast repertoire, so you have some incentive to boost your initiative as much as you can.
+- <Rating content="Saving Throws" ratings={[4]}/> The thaumaturge is the only class to get legendary in will saves automatically. The only other class that can do the same is the monk, and the thaumaturge gets their legendary proficiency two levels earlier. They also reach master in fortitude at 15th level, and reflex saves are easy to patch up. You face the unknown and the haunting, and they must weather your resolve.
+- <Rating content="Skills" ratings={[3]}/> The thaumaturge starts trained in all the tradition skills, plus 4 + your intelligence modifier. You have a lot of variety in the skills you choose. The thaumaturge also has Esoteric Lore, which is an autoscaling Lore Skill that you will have constant use for, on top of implements and feats that further expand your ability to use a variety of skills, as well as a few additional skill increases. You also gain extra skill increases at levels your class DC improves that only apply to your tradition skills, and if built right the thaumaturge can move up to 4 skills to legendary permanently.
+- <Rating content="Attacks" ratings={[4]}/> The thaumaturge has proficiency in all martial weapons up to master. You are mostly going to stick to one handed weapons and unarmed attacks, but if a macguffin zweihander shows up in your adventuring career and is relevant to smiting a big bad, you can certainly pick it up for a combat or two. The thaumaturge does have a slightly worse attack modifier compared to other martials due to having charisma as a key attribute, but they have two very powerful damage boosters in Implement’s Empowerment and Exploit Vulnerability and easy access to accuracy boosters through their features. The thaumaturge’s damage output is not one to be ignored.
+- <Rating content="Defenses" ratings={[3]}/> Medium armour proficiency is solid, and you advance to expert slightly faster than most classes. You can’t use shields very well, but you have a host of options you can select if taking damage is something you want to avoid. 
+- <Rating content="Class DC" ratings={[3]}/> The thaumaturge has the second fastest class DC progression in the game. While you don’t make use of it much with the base class, a lot of feats and features utilise this, and your fast progression makes you quite decent at using save based abilities, especially with your unique ability to easily impose penalties on your enemies saves against such effects.
+
+### Attributes:
+The thaumaturge is a little MAD, but this also means it’s very versatile when it comes to planning out your build. Diversity is the name of the game with this class.
+<table>
+    <tr>
+        <td><b>Colour</b></td>
+        <td><b>Modifier</b></td>
+    </tr>
+    <tr>
+        <td><Rating content="Blue" ratings={[4]} stars={false}/></td>
+        <td>+4</td>
+    </tr>
+    <tr>
+        <td><Rating content="Green" ratings={[3]} stars={false}/></td>
+        <td>+2 or +3</td>
+    </tr>
+    <tr>
+        <td><Rating content="Yellow" ratings={[2]} stars={false}/></td>
+        <td>+0 or +1</td>
+    </tr>
+    <tr>
+        <td><Rating content="Red" ratings={[1]} stars={false}/></td>
+        <td>-1 or 0</td>
+    </tr>
+</table>
+
+- <Rating content="Strength" ratings={[3]}/> For the heavy hitters. Strength offers a great variety of powerful weaponry and access to the athletics skill, which is still decent even for the action hungry thaumaturge. It also opens up access to heavy armour, which can help correct your pitiful reflex saves. <Rating content="Red" ratings={[1]} bold={false} stars={false}/> for dex builds, who have better places to allocate points into.
+- <Rating content="Dexterity" ratings={[3]}/> The thaumaturge can make solid use of finesse weaponry, owing to its wealth of damage boosters, to compensate for the strength loss while simultaneously increasing your defences and patching your worst save. It also opens up ranged combat through reload or thrown weaponry, which can help keep you safe to an extent. <Rating content="Yellow" ratings={[2]} bold={false} stars={false}/> for melee builds, who want at least a +1 to fill out the breastplate cap, or +0 if able to access heavy armour.
+- <Rating content="Constitution" ratings={[3]}/> You only have 8 hitpoints per level. If you are in melee, it is generally paramount you upgrade this as much as possible, but in the right party composition and with the right build, you can get away with a +1 at first level, though you should still upgrade this whenever possible. Turges with good range can safely rank this <Rating content="yellow" ratings={[2]} bold={false} stars={false}/>, especially if your party has some solid control and defenders. 
+- <Rating content="Intelligence" ratings={[1]}/> For a class that’s supposed to know so many things, Intelligence does nothing for you. Some Tome users may want to boost this skill if they wish to take advantage of free lore skills for reduced DCs, but in general you can just take Diverse Lore and call it a day.
+- <Rating content="Wisdom" ratings={[2]}/> You have the best will saves in the game and very solid Perception. You are less reliant on this attribute than some other classes, but investing into religion or medicine is really nice and can be very helpful as an extra addition to your toolkit.  
+- <Rating content="Charisma" ratings={[4]}/> Despite the blanket blue rating, there’s a lot more to this attribute than at first glance. Charisma powers a lot of features in your class, the most obvious one being Esoteric Lore. However, you can get away with a +3 if you want to move boosts elsewhere, such as for a melee build, and it is entirely possible to get away with a +2, though I cannot recommend any lower in an optimisation guide. Charisma is a very powerful attribute and you should boost it every chance you get, because more and more features will make use of it as you level. In fact, with the right build it’s entirely possible to dump your strength and dexterity (at least until your armour cap) and rely on a spellcasting and item build using your class DC and charisma based abilities.
+- **Attribute Boosts:** Boost your charisma, your choice of strength or dexterity depending on your build, and then whatever else as per the above rankings.
+
+### Esoterica, Esoteric Lore, and Exploit Vulnerability:
+Much like the inventor, the thaumaturge gains automatic proficiency scaling in a skill and uses that skill to power a variety of features. However, the thaumaturge’s Esoteric Lore skill is unique to its class, and uses its charisma modifier instead of intelligence. The skill allows you to recall knowledge on *any* creature, haunt or curse. This is already a powerful feature on its own, and it expands in usability greatly once combined with the Diverse Lore class feat, but it also provides one of your main damage boosters. Exploit Vulnerability.
+
+There is not much to say about EV that is not already well explained in the class, so I’ll just go over some basic details.
+
+Generally speaking, Personal Antithesis does less damage than exploiting a target’s Mortal Weakness unless they are significantly lower level than you. Now, per the rules as written, you cannot target multiple weaknesses on a creature if they both come from the same instance of damage, (such as if a cold iron axe hits a creature weak to cold iron and slashing, they only take additional damage from the higher weakness). It is quite possible that the same intent applies to the thaumaturge if your weapon’s damage already exploits a creature’s weakness, you cannot use Personal Antithesis to trigger another weakness. It is my personal opinion that since Personal Antithesis creates a special weakness to your *Strikes* and not another specific material, trait, or damage type, you should in fact be able to exploit a Personal Antitheseis of the foe’s in addition to the weakness(es) you are already triggering, because otherwise that just seems to punish your character for thinking ahead. 
+
+Esoterica is mostly just a flavour thing. I encourage all thaumaturges to make use of the various bits and bobs on their person when describing the actions they do in and out of combat, because it’s fun, and maybe even add special flourishes to your basic actions. Of course, you still need to have your esoterica on your person to activate some of your abilities, namely your EV. The implements themselves are detailed further below.  
+
+### Implement’s Empowerment and Intensify Vulnerability:
+The thaumaturge is generally limited to one handed weapons if they’re holding an implement, which they should be. They also generally want hands for activating special abilities on their implements and various magical items they collect throughout their adventuring career. This means that you’ll pretty much never see a damage die above a d8 in your weapon’s hands. This is where Implement’s Empowerment comes in. A flat *2 damage per weapon die* just for holding in your hands what you already were going to is fantastic. This effectively puts thaumaturge weapons up to 2 die sizes higher than their base weapon die was on average. Combined with EV, you have powerful damage boosters rivalled only by certain barbarians and the inventor. Of course, this expects you to have an implement in hand and turns off the moment you have anything in them that’s not a single weapon, your esoterica, or implements.
+
+As mentioned earlier, we’ll get into further detail on implements below. I want to highlight some important things about item juggling. When you get two implements (or when you get three implements as a Weapon user), you gain the ability to quickly swap one implement for another as long as you are wearing the implements on your person to use an action pertaining to the implement, including free actions and reactions. This may allow you to swap to a weapon to strike enemies with once you get 3 implements, but I’m not sure that’s RAI. This does mean that generally you won’t be able to benefit from two implements’ abilities at once if they require you to hold them in your hands, and wield a weapon at the same time. You can circumvent this by picking the Weapon Implement, or using unarmed attacks.
+
+Then there’s Intensify Invulnerability. This is a one action feature that all implements have that you can’t use the same round as your EV, and both have a once per round limit. The various IVs are detailed under their respective implements. If your GM runs games uber-RAW, there’s a case to be made that your IV benefits are technically always active due to the wording of the feature.
