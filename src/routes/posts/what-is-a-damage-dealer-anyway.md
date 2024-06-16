@@ -59,7 +59,7 @@ Exceeding the Fighter baseline is trivially achieved, such as by picking a subcl
 - And many other caster dips
 
 
-*The above list is paraphrased from Form of Dread.*
+*The above list is paraphrased from [Form of Dread](https://formofdread.wordpress.com/2022/02/27/quantifying-martial-dpr-reference-sheet/).*
 
 ### Conclusion
 A quantitative definition for “good damage” can be hard to find, but baselines provide a range of useful references to settle a debate stemming from differing perspectives and ideas regarding optimisation once and for all.
