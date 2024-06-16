@@ -12,7 +12,7 @@ related:
 
 <script>
     import { Line } from 'svelte-chartjs';
-    import { data, options } from '$lib/data/baselines.js';
+    import { data, options} from '$lib/data/baselines.js';
     import {
     Chart as ChartJS,
     Title,
@@ -45,6 +45,7 @@ One important baseline is the warlock baseline: a subclassless Warlock, prioriti
 Dedicated damage dealers such as fighters are held to a much higher standard, as their sole contribution to a fight is damage. One simple and relatively effective build plan for a dedicated damage dealer is the Sharpshooter and Crossbow Expert feats with a Hand Crossbow and the Archery fighting style (CBE/SS). Reaching DPR values over 40% higher than the Warlock baseline, this is a very useful baseline to compare dedicated damage dealers to. Another build that’s frequently used as an alternative to CBE/SS is the Great Weapon Master and Polearm Master feats alongside a Glaive or Halberd. However, this has some major drawbacks, chiefly that it is harder to calculate DPR for due to the difficulty in estimating the frequency of opportunity attacks, and has poor durability.
 
 <Line {data} {options}></Line>
+
 
 ### Beating the baselines: Why CBE+SS fighter is not the most optimized build
 Exceeding the Fighter baseline is trivially achieved, such as by picking a subclass, further feats, or multiclassing. Many dedicated damage dealers will multiclass heavily to avoid dead levels, thereby boosting their damage beyond the Fighter baseline. Some particularly potent options include:
