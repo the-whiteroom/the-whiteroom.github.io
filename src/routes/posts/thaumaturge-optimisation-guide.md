@@ -1272,7 +1272,7 @@ Being a charisma class, the thaumaturge can make good use of the oracle. If you 
 
 The main draw of Oracle is <Rating content="Bespell Weapon" ratings={[3]} bold={false}/>, especially for multiattack ‘turges, but you can also access it from the Sorcerer class. <Rating content="Divine Access" ratings={[2]} bold={false}/> might be nicer if it wasn’t so easy for you as a thaumaturge to get access to a lot of these spells anyway, especially with the introduction of spellhearts. Once again, you can certainly do worse, but you sure can do a whole lot better.
 
-<p/><Rating content="Psychic" ratings={[4]}/>
+<p/><Rating content="Psychic" ratings={[4]}/><br>
 Always set the psychic’s spellcasting attribute to charisma unless you are a masochist. The psychic provides reliable means for castaturges to contribute to the party’s damage output in the form of amped cantrips. You only get one cantrip with a restricted selection, but it’s a better than average cantrip since it can -practically speaking- be converted into a focus spell. No other multiclass archetype offers a focus spell on the dedication alone. This archetype does lose steam in free archetype games since there’s not a whole lot of options outside the spellcasting and cantrips, but you can almost never go wrong with more spells.
 
 **Conscious Minds:**<br>
@@ -1486,7 +1486,7 @@ Additionally, the dedication gives you an extra skill at expert proficiency, jus
 - <Rating content="Tactical Cadence" ratings={[4]}/> For one action, you give your party a 7th level haste for one round. Even though this doesn’t apply to you, it is fantastic. You might even consider using this every round just for the sheer power it gives your team, especially if they’re a larger party or use minions.
 - <Rating content="Target of Opportunity" ratings={[3]}/> It’s really weird that the otherwise melee focused Marshal ends with a feat for ranged turges. This is still a fantastic reaction for them, although if you are using Share weakness or otherwise having both attacks trigger the same weakness combining the damage can hurt its value. Still a great use of your reaction, especially if you didn’t take a reaction implement. 
 
-<Rating content="Martial Artist" ratings={[3]}/>
+<Rating content="Martial Artist" ratings={[3]}/><br>
 If you want to use unarmed attacks but don’t want to use one from an ancestry, this is the archetype for you. Stances are a bit harder for melee turges to make maximum use of because you usually want to EV, stride, and then strike, but the dedication itself improves your base unarmed attacks well enough so you can always enter a stance on your second turn. However, a lot of stances require you to be unarmored, which greatly reduces your armour class given your lower dexterity, at least until level 15 when you can get it to +5 for dexturges. There are still enough goodies here that it’s a viable pick for a free archetype game, at least at the earlier levels, and in a normal game you still have excellent pick ups at certain points.
 
 - <Rating content="Powder Punch Stance (U)" ratings={[2]}/> You must be from Alkenstar or the Mana Wastes to access this feat. I’m not sure if it’s a typo or something because AP content is weird like that but you don’t actually need an action to enter this stance, and all it does is add a little fire damage and make your shoves better on a critical success. Has some fun feats though, and is accessible right from level 2.

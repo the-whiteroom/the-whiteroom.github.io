@@ -46,6 +46,10 @@ Dedicated damage dealers such as fighters are held to a much higher standard, as
 
 <Line {data} {options}></Line>
 
+### What isn't a damage dealer?
+This is a game where almost every character has some way to deal a little bit of damage, usually around the Warlock baseline. However, what sets the (dedicated) damage dealers apart is that they do notably more damage than the vast majority of characters - and this is what sets them apart, because merely dealing damage isn't sufficient for that to be their entire role, in the same way that the Defense or Interception fighting styles don't make one a tank.
+
+For example, featless fighters, whose sole contribution is damage, do less damage than even the Warlock baseline, whilst also lacking Warlock's powerful control and utility - meaning that any role these characters seek to fill, a Warlock doing the absolute minimum will do better. Many characters that aren't damage dealers do almost the same damage - often referred to as 'cantrip damage', since it's roughly the amount of damage a Warlock using cantrips can achieve.
 
 ### Beating the baselines: Why CBE+SS fighter is not the most optimized build
 Exceeding the Fighter baseline is trivially achieved, such as by picking a subclass, further feats, or multiclassing. Many dedicated damage dealers will multiclass heavily to avoid dead levels, thereby boosting their damage beyond the Fighter baseline. Some particularly potent options include:
