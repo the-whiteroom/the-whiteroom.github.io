@@ -80,7 +80,7 @@ function footer(tooltipItems){
         }
     } else if(tooltipItems[0].dataset.label == 'Warlock Baseline'){
         data = {
-            'DEX modifier': '+'+cha[index],
+            'CHA modifier': '+'+cha[index],
             'Target AC': ac[index],
             'Hit chance': round(warlock_hit[index]*100,2)+'%',
             'Attacks' : warlock_attacks[index],
@@ -151,7 +151,7 @@ export const data = {
         label: "Two-Weapon Fighting (Shortswords)",
         data: twf_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#ccc',
+        borderColor: '#faa',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
@@ -160,7 +160,7 @@ export const data = {
         label: "Sword and Board (PAM Dueling Quarterstaff)",
         data: pam_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#ccc',
+        borderColor: '#aca',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
@@ -170,7 +170,7 @@ export const data = {
         label: "Great Weapon Fighting (Greatsword)",
         data: gwf_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#ccc',
+        borderColor: '#aaf',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,

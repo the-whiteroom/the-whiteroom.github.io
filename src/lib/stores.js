@@ -89,7 +89,7 @@ export const cards = writable([
     {
         title : "Thaumaturge optimisation guide",
         blurb : [
-            "[todo]",
+            "Want to play a worker of wonders? Smite undead, fiends, lycanthropes and other evil beings harnessing the power of myths and superstition? Recall long-lost information through esoteric means and rites? The thaumaturge is for you! This guide exists to help players, both old and new to pathfinder 2e, create the strongest and most fun builds with this versatile class."
         ],
         tags : ['PF2e', 'Classes']
     },

@@ -44,7 +44,9 @@ Not only does the fighter do essentially the same damage as the Paladin with a f
 
 The fighter can also operate at range, not having to worry about being unable to reach enemies, and not having to deal with the many dangers intrinsic to melee combat.
 
-<Line {data} {options}/>
+<div style="height:500px">
+  <Line {data} {options}/>
+</div>
 
 *The Paladin is a Variant Human, taking Polearm Master at level 1, and then boosting Strength at every opportunity. Great Weapon Master is a decrease to nova DPR, so this Paladin opts to avoid it.*
 

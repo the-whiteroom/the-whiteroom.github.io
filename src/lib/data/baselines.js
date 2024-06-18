@@ -37,7 +37,7 @@ function footer(tooltipItems){
     let data;
     if(tooltipItems[0].dataset.label == 'Fighter Baseline'){
         data = {
-            'DEX modifier': '+'+dex[index],
+            'CHA modifier': '+'+dex[index],
             'Target AC': ac[index],
             'Hit chance': round(fighter_hit[index]*100,2)+'%',
             'Attacks' : fighter_attacks[index],
