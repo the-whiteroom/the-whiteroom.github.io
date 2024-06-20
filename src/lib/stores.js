@@ -28,9 +28,7 @@ export const cards = writable([
     {
         title : "On tanking",
         blurb : [
-            "barbarian not durable",
-            "paladin not durable",
-            "armored caster extremely durable"
+            "The “tank” is one of the most enduring fantasy archetypes ever. The Barbarian, protecting his companions from a mighty foe. The Paladin, an impassable wall holding back the forces of darkness. The Fighter, a whirlwind of steel and death that no enemy may pass unscathed. With how fundamental a part of the genre it is, anyone would reasonably expect that D&D - a game in this genre - would support it."
         ],
         tags : ['D&D 5e', 'Theory']
     },
@@ -54,7 +52,8 @@ export const cards = writable([
     {
         title : "Rogue: if confirmation bias was a class",
         blurb : [
-            "words",
+            "Sneak Attack, Expertise, Cunning Action - almost every feature Rogues get feels strong, but isn't. Rogues struggle to find a niche as damage dealers, skill monkeys, or skirmishers.",
+            "And yet, anybody who’s played Rogue but not crunched the numbers will tell you that Rogues feel like they’re contributing effectively. Why is that?"
         ],
         tags : ['D&D 5e', 'Classes']
     },
@@ -75,7 +74,8 @@ export const cards = writable([
     {
         title : "No, you shouldn't dip Paladin 2",
         blurb : [
-            "words",
+            "It’s no secret that people love Smite. Who wouldn’t? It lets you roll more dice, and everybody loves that.",
+            "Except Smite has a horrible, dark secret. It’s not much damage, and it’s never worth the cost of your precious spell slots, nor the danger it puts you in."
         ],
         tags : ['D&D 5e', 'Theory']
     },

@@ -8,29 +8,9 @@ related:
 - "A weighty decision: Medium vs Heavy Armor"
 ---
 <script>
-    import { Line } from 'svelte-chartjs';
-    import { data, options } from '$lib/data/tanking.js';
-    import {
-    Chart as ChartJS,
-    Title,
-    Tooltip,
-    Legend,
-    LineElement,
-    LinearScale,
-    PointElement,
-    CategoryScale,
-  } from 'chart.js';
-
-  ChartJS.register(
-    Title,
-    Tooltip,
-    Legend,
-    LineElement,
-    LinearScale,
-    PointElement,
-    CategoryScale
-  );
+    import Tanking from '$lib/data/Tanking.svelte';
 </script>
+
 The "tank" is one of the most enduring fantasy archetypes ever. The Barbarian, protecting his companions from a mighty foe. The Paladin, an impassable wall holding back the forces of darkness. The Fighter, a whirlwind of steel and death that no enemy may pass unscathed. With how fundamental a part of the genre it is, anyone would reasonably expect that D&D - a game in this genre - would support it.
 
 Except it doesn't. At every turn, D&D goes out of its way to be as brutal as possible to characters who committed the cardinal sin of wanting to save their allies from danger.
@@ -45,34 +25,36 @@ As if to make up for the relative safety of range, melee in 5e is weirdly deadly
 
 If we pit various 'tanks' against a monster of CR equal to level, a Medium-difficulty encounter, we can get an idea of how survivable they are - keeping in mind that an average D&D party is expected to be able to survive 6-8 of these 3-4 turn encounters in a row.
 
-<Line {data} {options}/>
+<Tanking level={1}/>
+
+*You can toggle characters by clicking them in the legend.*
 
 As it turns out, no 'tank' can reliably survive more than 2 encounters.
 
+#### Tanky barbarian
+This is nearly the most durable Barbarian imaginable. As a monoclassed Hill Dwarf Bear Totem Barbarian, with access to Tough via a background (which isn't even allowed in most games), at level 20 this character can take 690 points of damage before being downed. It puts all its ASIs into CON then DEX.
+
+However, this character is 'dead weight' - meaning that they do not contribute effectively to the party in any way whatsoever, doing nothing but take damage nobody needed to take.
+
+Even with all of that, they barely survive two encounters in melee.
+
 #### Variant Human Barbarian
-Realistic Barbarians won't typically invest much in durability, especially if they want to contribute to their party, instead choosing to take feats like Polearm Master, Great Weapon Master, Resilient (Wisdom), Lucky, and Str ASIs, and picking a race like Variant Human, all of which this build does. It is also a Bear Totem barbarian, and does not make Reckless attacks, as they substantially reduce its survivability, despite accuracy boosts of this kind being needed for Barbarians to deal competitive damage.
+Realistic Barbarians won't typically invest much in durability, especially if they want to contribute to their party, instead choosing to take mandatory feats like Polearm Master, Great Weapon Master, Resilient (Wisdom), Lucky, and Str ASIs, and picking a race like Variant Human, all of which this build does. This is also a Bear Totem barbarian, and makes Reckless attacks, as Barbarians cannot deal competitive damage without accuracy boosts like Reckless.
 
-#### The tankiest possible Barbarian
-This character is effectively 'dead weight' - they don't contribute effectively to the party in any way. And yet, they still can't survive melee.
+#### An average Cleric
+As a comparison, a competently built caster is included - in this case, a Cleric. 
 
-We choose a Hill Dwarf Bear Totem Barbarian X, taking Tough as a starting feat via a background, and putting every ASI in Con then Dex afterwards.
+Since Clerics are very dependent on their concentration, and there are several multiclass dips that make them better at this, such as War Wizard, almost all well-built Clerics will take one or more of these. This particular Cleric takes its first level in Divine Soul Sorcerer, also gaining access to the *Shield* spell.
 
-#### Your average Cleric
-This Cleric does nothing special at all - it just sits in place and Dodges, dealing damage using *Spirit Guardians* and Telekinetic.
-
-#### An optimised Cleric
-Clerics are very dependent on their Concentration, and there are several multiclass dips that make them better at this, such as War Wizard. This particular Cleric takes its first level in Divine Soul Sorcerer, also gaining access to the *Shield* spell.
-
-This character is so durable that we can't even show it on the graph.
+Beyond that, the Cleric employs no special tactics - like almost all other casters, it casts a big concentration spell (*Bless* or *Spirit Guardians*, typically), then Dodges.
 
 #### A durability-focused Paladin
-Paladins can be somewhat durable, with their access to heavy armor and the Defense fighting style. However, it's still not enough to keep them alive. This is a Straightclassed Paladin, wearing Plate and holding a shield, taking the Defense fighting style at level 2.
-It could be a Variant Human or Earth Genasi and the numbers would remain the same.
+It's often claimed that Paladins, with with their access to heavy armor and the Defense fighting style, can fill so-called 'tank' or 'off-tank' roles. However, this still isn't enough to keep them alive. This is a straightclassed Paladin, wearing Plate and holding a shield, taking the Defense fighting style at level 2.
 
 ### AC is much better than HP
 It's quite easy to get very high AC values (~24) in 5e, but weapon users are limited to around 16-21 AC, only reaching the higher ends if they sacrifice their effectiveness completely. When every point of AC exponentially increases your survivability, this is a vast difference.
 
-In contrast, the benefit of HP is linear, and pales in comparison to high AC or the Dodge action.
+In contrast, the benefit of HP is linear, and pales in comparison to high AC or the Dodge action, as the above graph shows.
 
 ### Tanks can't draw aggro
 The 'tank' as it's now understood has been heavily influenced by MMORPG tanks, which can shrug off massive amounts of damage, and have abilities that force their foes to target them. However, many so-called 'tanks' in 5e have no reason for monsters to target them at all.
