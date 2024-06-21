@@ -7,6 +7,31 @@ related:
 - What is a damage dealer, anyway?
 - Ranged vs melee
 ---
+<script>
+    import { Line } from 'svelte-chartjs';
+    import { data, options } from '$lib/data/rogue.js';
+    import {
+        Chart as ChartJS,
+        Title,
+        Tooltip,
+        Legend,
+        LineElement,
+        LinearScale,
+        PointElement,
+        CategoryScale,
+    } from 'chart.js';
+
+    ChartJS.register(
+        Title,
+        Tooltip,
+        Legend,
+        LineElement,
+        LinearScale,
+        PointElement,
+        CategoryScale
+    );
+</script>
+
 Rogue is best described as a collection of features that feel strong, but aren't. Sneak Attack, Expertise, Cunning Action - almost every feature Rogues get fits this pattern. Falling behind other classes in many ways, Rogues struggle to find a niche - whether that's as a damage dealer, a skill monkey, or a skirmisher.
 
 And yet, anybody who's played Rogue but not crunched the numbers will tell you that Rogues feel like they're contributing effectively. Why is that?
@@ -14,9 +39,22 @@ And yet, anybody who's played Rogue but not crunched the numbers will tell you t
 In a lot of ways, this can be attributed to the all-too-human tendency to remember the exceptions, the big events, the time the Rogue rolled high - even crit - on their Sneak attacks, or the time the Paladin did the same with Smite. Neither of these features are actually that much damage, but we never remember the averages, nor all the times they rolled low, so these features anecdotally feel much stronger than they actually are. It's the same reason sustained spells like Conjure Animals or Sleet Storm don't feel as powerful as they are - they aren't flashy. Our brains are simply just hardwired this way.
 
 ### Lacking in DPR
-Sneak Attack can feel like a lot of damage when you're rolling a lot of dice, but Rogues just aren't effective damage dealers. In a game balanced around resource expenditure, the Rogue is unique in that it's almost totally resourceless. On-demand burst damage, which the Rogue lacks, is far more effective at killing enemies before they can harm the party than sustained damage. Additionally, Rogue's sustained DPR falls below Fighter Baseline, the absolute bare minimum to be considered a damage dealer.
+Sneak Attack can feel like a lot of damage when you're rolling a lot of dice, but Rogues just aren't effective damage dealers. In a game balanced around resource expenditure, the Rogue is unique in that it's almost totally resourceless. On-demand burst damage, which the Rogue lacks, is far more effective at killing enemies before they can harm the party than sustained damage. Additionally, Rogue's sustained DPR falls below [Fighter Baseline](/what-is-a-damage-dealer-anyway), the absolute bare minimum to be considered a damage dealer.
 
-// rogue graph
+<div style="height:400px">
+    <Line {data} {options}/>
+</div>
+
+The Rogue here takes Crossbow Expert then Sharpshooter, and attacks with the latter if it's already landed Sneak Attack this turn, the best possible strategy for Rogues.
+
+One very common mistake is assuming that the Rogue has an external advantage source but the Fighter doesn't - and even with this mistake, the Rogue barely beats the Fighter baseline.
+
+Rogues should generally not be assumed to have an external advantage source, because these are few and far between. With an ally generating advantage (via *Web* or the optional flanking rule, for example), Rogues are free to use their bonus action on Crossbow Expert, but this has a hidden opportunity cost - doing so means that allies aren't concentrating on better spells, or have to enter melee.
+
+To deal with this issue, some subclasses change the rules around Sneak Attack.
+- Arcane Trickster can generate advantage without consuming a bonus action via *Find Familiar*, with the caveat that any vaguely intelligent enemy will just shoot the familiar.
+- Swashbuckler can generate Sneak Attack without advantage in melee, but also can't easily generate advantage except via Steady Aim, which is tantamount to suicide in melee.
+- Phantom can, a very limited number of times per long rest, deal a smaller amount of additional damage to another target with Sneak Attack.
 
 Elven Accuracy is a popular choice on Rogues, but it's underwhelming. Only applying when you have advantage, it's less than an 8% increase to your hit chance (14.4% with Sharpshooter). It has no effect when you can't generate advantage.
 
