@@ -8,10 +8,11 @@ related:
 - Ranged vs melee
 ---
 <script>
-    import { Line } from 'svelte-chartjs';
+    import { Line, Radar } from 'svelte-chartjs';
     import { data, options } from '$lib/data/rogue.js';
     import { data as subclass_data, options as subclass_options } from '$lib/data/rogue_subclasses.js';
     import { data as ea_data, options as ea_options } from '$lib/data/elven accuracy.js';
+    import { data as skill_data, options as skill_options } from '$lib/data/rogue skills.js';
     import {
         Chart as ChartJS,
         Title,
@@ -21,6 +22,7 @@ related:
         LinearScale,
         PointElement,
         CategoryScale,
+        RadialLinearScale,
     } from 'chart.js';
 
     ChartJS.register(
@@ -30,7 +32,8 @@ related:
         LineElement,
         LinearScale,
         PointElement,
-        CategoryScale
+        CategoryScale,
+        RadialLinearScale
     );
 </script>
 
@@ -59,6 +62,7 @@ To deal with this issue, some subclasses change the rules around Sneak Attack.
 - Arcane Trickster can generate advantage without consuming a bonus action via *Find Familiar*, with the caveat that any vaguely intelligent enemy will just shoot the familiar, opportunity attack it, or Ready an attack for when it comes into reach.
 - Swashbuckler can generate Sneak Attack without advantage in melee, but also can't easily generate advantage except via Steady Aim, which is tantamount to suicide in melee.
 - Phantom can, a very limited number of times per long rest, deal a smaller amount of additional damage to another target with Sneak Attack.
+- Inquisitive can Sneak Attack without advantage. This frees up its bonus action for Crossbow Expert.
 
 <div style="height:400px">
     <Line data={subclass_data} options={subclass_options}/>
@@ -80,7 +84,7 @@ Elven Accuracy is a popular choice on Rogues, but it's underwhelming. Only apply
 *The above Rogue takes Elven Accuracy at level 4, Crossbow Expert at level 8, and Sharpshooter at level 10.*
 
 ### Skills
-Rogues are supposed to be good at skill checks - and with the ease at which they reach high modifiers to their skill checks, you'd expect them to be. However, modifiers alone aren't indicative of how good you are - for example, the difference between a +3 and a +6 modifer isn't anywhere near twice as much, it's only 15%. Expertise is often touted as a fantastic boost to skill checks, but in actuality, other classes get comparable (or better) boost to skill checks.
+Rogues are supposed to be good at skill checks - and with the ease at which they reach high modifiers to their skill checks, you'd expect them to be. However, modifiers alone aren't indicative of how good you are - for example, the difference between a +3 and a +6 modifer isn't anywhere near twice as much, it's only 15%. Expertise is often touted as a fantastic boost to skill checks, but in actuality, other classes get comparable (or better) boosts to skill checks.
 
 The overwhelming majority of games are run below level 10, when Expertise is a 10-15% boost to 2-4 skills (of eighteen). Expertise is available to other classes too - for example, all Bards get two, Rangers get one, and many subclasses (like Knowledge) get it too. However, Expertise just isn't great.
 
@@ -91,6 +95,10 @@ Reliable Talent feels good too. Never rolling below a 10? Sign me up! However, c
 Additionally, many skill checks can be bypassed via spells like Suggestion, Knock, or Invisibility.
 
 Furthermore, fourteen of the eighteen skills are based off mental stats, and one off strength, none of which Rogues have any reason to invest in, particularly compared to casters that will naturally have much higher scores in these stats.
+
+<Radar data={skill_data} options={skill_options}/>
+
+*Both the Rogue (Urchin) and the Cleric (Acolyte) are level 1 with +2/+1 races. Some stats are chosen with Resilient in mind.*
 
 ### Durability
 Rogues _do_ have one resource - their health. It's not great, being a d8, on par with spellcasters like Bard, Cleric, and Warlock, and neither is their AC, being limited to light armor. This caps them at a maximum AC of 17, and many rogues, particularly those that invest in other stats to boost their skill checks, can't afford a super-high Constitution score either. In practice, Rogues need feats like Crossbow Expert and Sharpshooter, so they can't boost their DEX to +5 until very late in the game. When other classes beat 17AC out-of-the-box or with a single-level dip, Rogues are one of the least durable classes in the game. Their lack of access to potent defensive boosters like the *Shield* spell further worsens this.

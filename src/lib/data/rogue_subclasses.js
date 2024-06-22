@@ -44,6 +44,10 @@ const swash_DPR = unmodified_hit.map((e,i) => e*(4.5+dex[i]+3.5*sneak_dice[i]) +
 const phantom_wails = prof.map((e,i) => e*3.5*Math.ceil(sneak_dice[i]/2)*(levels[i]<9)); //total DPR from WFtG over an adventuring day (ignoring hits) before level 9, when we can use it every turn
 const phantom_DPR = unmodified_adv_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]+(levels[i]>=9)*3.5*Math.ceil(sneak_dice[i]/2)*(1+(levels[i]>=17))) + adv_crit*(3.5+3.5*sneak_dice[i]) + phantom_wails[i]/4/8);
 
+//inquisitive - 1 unmodified/SA, 1 unmodified/SS or 1 unmodified/SA (depends on first hit)
+const inquisitive_sa = unmodified_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]) + crit*(3.5+dex[i]+3.5*sneak_dice[i]));
+const inquisitive_ss = ss_hit.map((e,i) => e*(3.5+dex[i]+10*(levels[i]>=4)) + crit*3.5);
+const inquisitive_DPR = unmodified_hit.map((e,i) => inquisitive_sa[i] + e*inquisitive_ss[i] + (1-e)*inquisitive_sa[i]);
 
 function round(num, decimalPlaces = 0) {
     if (num < 0)
@@ -93,6 +97,22 @@ function footer(tooltipItems){
             'Crit chance' : round(crit*100,2)+'%',
             'Additional damage on crit' : 3.5+3.5*sneak_dice[index],
         }
+    } else if (tooltipItems[0].dataset.label == 'Inquisitive'){
+        data = {
+            'DEX modifier': '+'+dex[index],
+            'Target AC': ac[index],
+            'Hit chance (Sneak Attack)' : round(unmodified_hit[index]*100,2)+'%',
+            'Hit chance (Sharpshooter)' : round(ss_hit[index]*100,2)+'%',
+            'Damage on hit (Sneak Attack)' : round(3.5+dex[index]+3.5*sneak_dice[index],5),
+            'Damage on hit (Sharpshooter)' : round(3.5+dex[index]+10*(levels[index]>=4),5),
+            'Crit chance' : round(crit*100,2)+'%',
+            'Additional damage on crit (Sneak Attack)' : round(3.5+3.5*sneak_dice[index],5),
+            'Additional damage on crit (Sharpshooter)' : 3.5,
+            'Damage per attack (Sneak Attack)' : round(inquisitive_sa[index],5),
+            'Damage per attack (Sharpshooter)' : round(inquisitive_ss[index],5),
+            'Damage (1st attack)' : round(inquisitive_sa[index],5),
+            'Damage (2nd attack)' : round(unmodified_hit[index]*inquisitive_ss[index] + (1-unmodified_hit[index])*inquisitive_sa[index],5)
+        }
     }
     return Object.entries(data).map(e => e[0]+': '+e[1]);
 }
@@ -101,19 +121,19 @@ export const data = {
     labels: levels,
     datasets: [
       {
-        label: "Fighter Baseline",
-        data: fighter_DPR,
+        label: "Arcane Trickster",
+        data: arcane_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#7f513e',
+        borderColor: '#2a9d8f',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
       },
       {
-        label: "Arcane Trickster",
-        data: arcane_DPR,
+        label: "Inquisitive",
+        data: inquisitive_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#444',
+        borderColor: '#e9c46a',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
@@ -122,7 +142,7 @@ export const data = {
         label: "Phantom",
         data: phantom_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#888',
+        borderColor: '#f4a261',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
@@ -131,7 +151,16 @@ export const data = {
         label: "Swashbuckler",
         data: swash_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#ccc',
+        borderColor: '#e76f51',
+        backgroundColor: '#fff',
+        pointRadius: 4,
+        pointHoverRadius: 5,
+      },
+      {
+        label: "Fighter Baseline",
+        data: fighter_DPR,
+        cubicInterpolationMode: 'monotone',
+        borderColor: '#7f513e',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,

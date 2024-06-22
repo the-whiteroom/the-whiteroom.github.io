@@ -26,5 +26,5 @@ However, there's a few ways to circumvent the strength requirement.
 
 Some characters also have no choice but to wear heavy armor, because they can't afford the Dexterity. Paladins need high Charisma, Constitution, and Strength, particularly to meet multiclassing requirements, so are often forced into wearing heavy armor. 
 
-### Conclusion, and how to choose simply
+### Conclusion (and how to choose simply)
 Put simply, medium armor is the best bet for the vast majority of characters, given that most characters can access it with a single level in another class. As outlined above, there are a few exceptions, but in one of the strangest design choices in 5e, medium armor is almost always better.

@@ -54,7 +54,7 @@ Since Clerics are very dependent on their concentration, and there are several m
 Beyond that, the Cleric employs no special tactics - like almost all other casters, it casts a big concentration spell (*Bless* or *Spirit Guardians*, typically), then Dodges.
 
 #### A durability-focused Paladin
-It's often claimed that Paladins, with with their access to heavy armor and the Defense fighting style, can fill so-called 'tank' or 'off-tank' roles. However, this still isn't enough to keep them alive. This is a straightclassed Paladin, wearing Plate and holding a shield, taking the Defense fighting style at level 2.
+It's often claimed that Paladins, with their access to heavy armor and the Defense fighting style, can fill so-called 'tank' or 'off-tank' roles. However, this still isn't enough to keep them alive. This is a straightclassed Paladin, wearing Plate and holding a shield, taking the Defense fighting style at level 2.
 
 ### AC is much better than HP
 It's quite easy to get very high AC values (~24) in 5e, but weapon users are limited to around 16-21 AC, only reaching the higher ends if they sacrifice their effectiveness completely. When every point of AC exponentially increases your survivability, this is a vast difference.
