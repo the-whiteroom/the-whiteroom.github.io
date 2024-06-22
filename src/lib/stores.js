@@ -10,6 +10,22 @@ export const cards = writable([
         tags : ['D&D 5e', 'Theory']
     },
     {
+        title : "Rogue: if confirmation bias was a class",
+        blurb : [
+            "Sneak Attack, Expertise, Cunning Action - almost every feature Rogues get feels strong, but isn't. Rogues struggle to find a niche as damage dealers, skill monkeys, or skirmishers.",
+            "And yet, anybody who’s played Rogue but not crunched the numbers will tell you that Rogues feel like they’re contributing effectively. Why is that?"
+        ],
+        tags : ['D&D 5e', 'Classes']
+    },
+    {
+        title : "No, you shouldn't dip Paladin 2",
+        blurb : [
+            "It’s no secret that people love Smite. Who wouldn’t? It lets you roll more dice, and everybody loves that.",
+            "Except Smite has a horrible, dark secret. It’s not much damage, and it’s never worth the cost of your precious spell slots, nor the danger it puts you in."
+        ],
+        tags : ['D&D 5e', 'Theory']
+    },
+    {
         title : "A weighty decision: Medium vs Heavy Armor",
         blurb : [
             "Ever wondered why most characters are better off wearing medium armor?",
@@ -50,14 +66,6 @@ export const cards = writable([
         tags : ['D&D 5e', 'Spells']
     },
     {
-        title : "Rogue: if confirmation bias was a class",
-        blurb : [
-            "Sneak Attack, Expertise, Cunning Action - almost every feature Rogues get feels strong, but isn't. Rogues struggle to find a niche as damage dealers, skill monkeys, or skirmishers.",
-            "And yet, anybody who’s played Rogue but not crunched the numbers will tell you that Rogues feel like they’re contributing effectively. Why is that?"
-        ],
-        tags : ['D&D 5e', 'Classes']
-    },
-    {
         title : "PF2e: it's just better",
         blurb : [
             "words",
@@ -70,14 +78,6 @@ export const cards = writable([
             "words",
         ],
         tags : ['D&D 5e', 'Classes']
-    },
-    {
-        title : "No, you shouldn't dip Paladin 2",
-        blurb : [
-            "It’s no secret that people love Smite. Who wouldn’t? It lets you roll more dice, and everybody loves that.",
-            "Except Smite has a horrible, dark secret. It’s not much damage, and it’s never worth the cost of your precious spell slots, nor the danger it puts you in."
-        ],
-        tags : ['D&D 5e', 'Theory']
     },
     {
         title : "Hold Person: An overrated spell",
