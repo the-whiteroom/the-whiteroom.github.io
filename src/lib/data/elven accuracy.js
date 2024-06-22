@@ -19,22 +19,46 @@ const fighter_DPR = fighter_attacks.map((e,i) => e*(fighter_hit[i]*fighter_hit_d
 const fighter_adv_hit = fighter_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
 const fighter_adv_DPR = fighter_attacks.map((e,i) => e*(fighter_adv_hit[i]*fighter_hit_damage[i] + adv_crit*fighter_crit_damage));
 
-// rogue
+// rogue (EA)
 const sneak_dice = levels.map(l => Math.floor((l+1)/2,1));
-const dex = levels.map(l => 3+(l>=8)+(l>=10));
+const dex = levels.map(l => 3+(l>=12)+(l>=16));
+const adv_dice = levels.map(l => l<4 ? 2 : 3)
+const ea_crit = adv_dice.map(e=> 1-(1-crit)**e);
 
-const unmodified_attack = prof.map((e,i) => e+dex[i]); // unmodified attacks are always made without SS and always add sneak attack
-const unmodified_hit = unmodified_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2); //made with advantage
-const unmodified_damage = unmodified_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]) + adv_crit*(3.5+3.5*sneak_dice[i]));
+const unmodified_attack = prof.map((e,i) => e+dex[i]);
+const ss_attack = prof.map((e,i) => e+dex[i]-5*(levels[i]>=10));
 
-const ss_attack = prof.map((e,i) => e+dex[i]-5*(levels[i]>=4)); // SS attacks are always made with SS and never add sneak attack
-const ss_hit = ss_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
-const ss_damage = ss_hit.map((e,i) => e*(3.5+dex[i]+10*(levels[i]>=4)) + adv_crit*3.5);
+const unmodified_hit = unmodified_attack.map((e,i) => (21-ac[i]+e)/20);
+const unmodified_adv_hit = unmodified_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**adv_dice[i]);
+const ss_hit = ss_attack.map((e,i) => (21-ac[i]+e)/20);
+const ss_adv_hit = ss_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**adv_dice[i]);
 
-//no external advantage source - BA generate advantage, action one unmodified attack
-const ba_DPR = unmodified_damage;
+// no external advantage source
+const ba_DPR = unmodified_adv_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]) + ea_crit[i]*(3.5+3.5*sneak_dice[i]));
+
 // external advantage source
-const ext_DPR = unmodified_hit.map((e,i) => unmodified_damage[i] + e * ss_damage[i] + (1-e) * unmodified_damage[i]);
+const ext_attack_1 = unmodified_adv_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]) + ea_crit[i]*(3.5+3.5*sneak_dice[i]));
+// IF beyond level 8, CBE attack as well
+const ext_attack_2_ss = ss_adv_hit.map((e,i) => e*(3.5+dex[i]+10*(levels[i]>=10)) + ea_crit[i]*3.5);
+// if didn't hit first time, second attack is just ext_attack_1, no need to duplicate code
+const ext_DPR = unmodified_adv_hit.map((e,i) => ext_attack_1[i] + (levels[i]>=8)*(e*ext_attack_2_ss[i] + (1-e)*ext_attack_1[i]));
+
+//rogue baseline
+const baseline_dex = levels.map(l => 3+(l>=8)+(l>=12));
+const baseline_unmodified_attack = prof.map((e,i) => e+baseline_dex[i]);
+const baseline_ss_attack = prof.map((e,i) => e+baseline_dex[i]-5*(levels[i]>=4));
+
+const baseline_unmodified_adv_hit = baseline_unmodified_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
+const baseline_ss_adv_hit = baseline_ss_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
+
+const baseline_sa_adv = baseline_unmodified_adv_hit.map((e,i) => e*(3.5+baseline_dex[i]+3.5*sneak_dice[i]) + adv_crit*(3.5+3.5*sneak_dice[i]));
+const baseline_ss_adv = baseline_ss_adv_hit.map((e,i) => e*(3.5+baseline_dex[i]+10*(levels[i]>=4)) + adv_crit*3.5);
+
+const baseline_ba_DPR = baseline_sa_adv;
+const baseline_ext_DPR = baseline_unmodified_adv_hit.map((e,i) => baseline_sa_adv[i] + e*baseline_ss_adv[i] + (1-e)*baseline_sa_adv[i]);
+
+console.log(baseline_ba_DPR);
+console.log(baseline_ext_DPR);
 
 function round(num, decimalPlaces = 0) {
     if (num < 0)
@@ -71,26 +95,32 @@ function footer(tooltipItems){
             'Damage on hit' : fighter_hit_damage[index],
             'Additional damage on crit' : fighter_crit_damage
         }
-    } else if (tooltipItems[0].dataset.label == 'Rogue (External advantage source)'){
+    } else if (tooltipItems[0].dataset.label == 'Elven Accuracy (External advantage source)'){
         data = {
             'DEX modifier': '+'+dex[index],
             'Target AC': ac[index],
-            'Crit chance' : round(adv_crit*100,2)+'%',
-            'Hit chance': round(unmodified_hit[index]*100,2)+'%',
-            'Additional damage on crit' : 3.5+3.5*sneak_dice[index],
-            'Damage per attack' : round(unmodified_damage[index],5),
-            'Hit chance (SS)': round(ss_hit[index]*100,2)+'%',
-            'Additional damage on crit (SS)' : 3.5,
-            'Damage per attack (SS)' : round(ss_damage[index],5),
+            'Crit chance' : round(ea_crit[index]*100,2)+'%',
+            'Hit chance (Sneak Attack)': round(unmodified_adv_hit[index]*100,2)+'%',
+            'Damage on hit (Sneak Attack)' : 3.5+dex[index]+3.5*sneak_dice[index],
+            'Additional damage on crit (Sneak Attack)' : 3.5+3.5*sneak_dice[index],
+            'Hit chance (Sharpshooter)' : round(ss_adv_hit[index]*100,2)+'%',
+            'Damage on hit (Sharpshooter)' : 3.5+dex[index]+10*(levels[index]>=10),
+            'Additional damage on crit (Sharpshooter)' : 3.5,
+            'Damage per attack (Sneak Attack)' : round(ext_attack_1[index],3),
+            'Damage per attack (Sharpshooter)' : round(ext_attack_2_ss[index],3),
+            'Damage (1st attack)' : round(ext_attack_1[index],3),
         }
-    } else if (tooltipItems[0].dataset.label == 'Rogue (BA advantage generation)'){
+        if(levels[index]>=8){
+            data['Damage (2nd attack)'] = round(unmodified_adv_hit[index]*ext_attack_2_ss[index] + (1-unmodified_adv_hit[index])*ext_attack_1[index],3);
+        }
+    } else if (tooltipItems[0].dataset.label == 'Elven Accuracy (BA advantage generation)'){
         data = {
             'DEX modifier': '+'+dex[index],
             'Target AC': ac[index],
-            'Crit chance' : round(adv_crit*100,2)+'%',
-            'Hit chance': round(unmodified_hit[index]*100,2)+'%',
+            'Crit chance' : round(ea_crit[index]*100,2)+'%',
+            'Hit chance': round(unmodified_adv_hit[index]*100,2)+'%',
+            'Damage on hit' : 3.5+dex[index]+3.5*sneak_dice[index],
             'Additional damage on crit' : 3.5+3.5*sneak_dice[index],
-            'Damage per attack' : round(unmodified_damage[index],5),
         }
     }
     return Object.entries(data).map(e => e[0]+': '+e[1]);
@@ -119,7 +149,7 @@ export const data = {
         borderDash: [5,],
       },
       {
-        label: "Rogue (BA advantage generation)",
+        label: "Elven Accuracy (BA advantage generation)",
         data: ba_DPR,
         cubicInterpolationMode: 'monotone',
         borderColor: '#555752',
@@ -128,10 +158,29 @@ export const data = {
         pointHoverRadius: 5,
       },
       {
-        label: "Rogue (External advantage source)",
+        label: "Elven Accuracy (External advantage source)",
         data: ext_DPR,
         cubicInterpolationMode: 'monotone',
         borderColor: '#555752',
+        backgroundColor: '#fff',
+        pointRadius: 4,
+        pointHoverRadius: 5,
+        borderDash: [5,],
+      },
+      {
+        label: "Rogue (BA advantage generation)",
+        data: baseline_ba_DPR,
+        cubicInterpolationMode: 'monotone',
+        borderColor: '#aaa',
+        backgroundColor: '#fff',
+        pointRadius: 4,
+        pointHoverRadius: 5,
+      },
+      {
+        label: "Rogue (External advantage source)",
+        data: baseline_ext_DPR,
+        cubicInterpolationMode: 'monotone',
+        borderColor: '#aaa',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,

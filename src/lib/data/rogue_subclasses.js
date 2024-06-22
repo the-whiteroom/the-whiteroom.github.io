@@ -1,10 +1,9 @@
 //compute baselines
-const levels = [...Array(20).keys()].map(l => l+1);
+const levels = [...Array(18).keys()].map(l => l+3);
 const prof = levels.map(l => Math.floor(l/4 + 7/4));
 const ac = levels.map(l => 13+(l>=4)+(l>=5)+(l>=8)+(l>=10)+(l>=13)+(l>=17));
 const crit = 0.05;
 const adv_crit = 1-(1-crit)**2;
-
 
 // fighter baseline
 const mod = levels.map(l => 3+(l>=6)+(l>=8));
@@ -23,18 +22,28 @@ const fighter_adv_DPR = fighter_attacks.map((e,i) => e*(fighter_adv_hit[i]*fight
 const sneak_dice = levels.map(l => Math.floor((l+1)/2,1));
 const dex = levels.map(l => 3+(l>=8)+(l>=10));
 
-const unmodified_attack = prof.map((e,i) => e+dex[i]); // unmodified attacks are always made without SS and always add sneak attack
-const unmodified_hit = unmodified_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2); //made with advantage
-const unmodified_damage = unmodified_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]) + adv_crit*(3.5+3.5*sneak_dice[i]));
+const unmodified_attack = prof.map((e,i) => e+dex[i]);
+const ss_attack = prof.map((e,i) => e+dex[i]-5*(levels[i]>=4));
 
-const ss_attack = prof.map((e,i) => e+dex[i]-5*(levels[i]>=4)); // SS attacks are always made with SS and never add sneak attack
-const ss_hit = ss_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
-const ss_damage = ss_hit.map((e,i) => e*(3.5+dex[i]+10*(levels[i]>=4)) + adv_crit*3.5);
+const unmodified_hit = unmodified_attack.map((e,i) => (21-ac[i]+e)/20);
+const unmodified_adv_hit = unmodified_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
+const ss_hit = ss_attack.map((e,i) => (21-ac[i]+e)/20);
+const ss_adv_hit = ss_attack.map((e,i) => 1-(1-(21-ac[i]+e)/20)**2);
 
-//no external advantage source - BA generate advantage, action one unmodified attack
-const ba_DPR = unmodified_damage;
-// external advantage source
-const ext_DPR = unmodified_hit.map((e,i) => unmodified_damage[i] + e * ss_damage[i] + (1-e) * unmodified_damage[i]);
+// arcane trickster - 1 adv/SA, 1 unmodified/SS or 1 unmodified/SA (depends on first hit)
+const arcane_attack_1 = unmodified_adv_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i])+adv_crit*(3.5+3.5*sneak_dice[i]));
+const arcane_attack_2_ss = ss_hit.map((e,i) => e*(3.5+dex[i]+10*(levels[i]>=4))+crit*3.5);
+const arcane_attack_2_sa = unmodified_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i])+crit*(3.5+sneak_dice[i]));
+const arcane_DPR = unmodified_adv_hit.map((e,i) => arcane_attack_1[i] + e*arcane_attack_2_ss[i] + (1-e)*arcane_attack_2_sa[i]);
+
+// swashbuckler - 1 unmodified/SA (BA cunning action)
+const swash_DPR = unmodified_hit.map((e,i) => e*(4.5+dex[i]+3.5*sneak_dice[i]) + crit*(4.5+3.5*sneak_dice[i]));
+
+
+// phantom - 1 adv/SA (BA Steady Aim) and then some additional rider from Wails From The Grave
+const phantom_wails = prof.map((e,i) => e*3.5*Math.ceil(sneak_dice[i]/2)*(levels[i]<9)); //total DPR from WFtG over an adventuring day (ignoring hits) before level 9, when we can use it every turn
+const phantom_DPR = unmodified_adv_hit.map((e,i) => e*(3.5+dex[i]+3.5*sneak_dice[i]+(levels[i]>=9)*3.5*Math.ceil(sneak_dice[i]/2)*(1+(levels[i]>=17))) + adv_crit*(3.5+3.5*sneak_dice[i]) + phantom_wails[i]/4/8);
+
 
 function round(num, decimalPlaces = 0) {
     if (num < 0)
@@ -61,43 +70,35 @@ function footer(tooltipItems){
             'Damage on hit' : fighter_hit_damage[index],
             'Additional damage on crit' : fighter_crit_damage
         }
-    } else if (tooltipItems[0].dataset.label == 'Fighter Baseline (External advantage source)'){
+    } else if (tooltipItems[0].dataset.label == 'Arcane Trickster'){
         data = {
             'DEX modifier': '+'+mod[index],
             'Target AC': ac[index],
             'Hit chance': round(fighter_adv_hit[index]*100,2)+'%',
-            'Attacks' : fighter_attacks[index],
-            'Crit chance' : round(adv_crit*100,2)+'%',
-            'Damage on hit' : fighter_hit_damage[index],
-            'Additional damage on crit' : fighter_crit_damage
+            'Attack 1 damage' : round(arcane_attack_1[index],5),
+            'Attack 2 damage' : round(arcane_attack_2_sa[index],5),
+            'Attack 2 damage (SS)' : round(arcane_attack_2_ss[index],5)
         }
-    } else if (tooltipItems[0].dataset.label == 'Rogue (External advantage source)'){
+    } else if (tooltipItems[0].dataset.label == 'Phantom'){
         data = {
             'DEX modifier': '+'+dex[index],
             'Target AC': ac[index],
-            'Crit chance' : round(adv_crit*100,2)+'%',
-            'Hit chance': round(unmodified_hit[index]*100,2)+'%',
-            'Additional damage on crit' : 3.5+3.5*sneak_dice[index],
-            'Damage per attack' : round(unmodified_damage[index],5),
-            'Hit chance (SS)': round(ss_hit[index]*100,2)+'%',
-            'Additional damage on crit (SS)' : 3.5,
-            'Damage per attack (SS)' : round(ss_damage[index],5),
         }
-    } else if (tooltipItems[0].dataset.label == 'Rogue (BA advantage generation)'){
+    } else if (tooltipItems[0].dataset.label == 'Swashbuckler'){
         data = {
             'DEX modifier': '+'+dex[index],
             'Target AC': ac[index],
-            'Crit chance' : round(adv_crit*100,2)+'%',
             'Hit chance': round(unmodified_hit[index]*100,2)+'%',
+            'Damage on hit' : 3.5+dex[index]+3.5*sneak_dice[index],
+            'Crit chance' : round(crit*100,2)+'%',
             'Additional damage on crit' : 3.5+3.5*sneak_dice[index],
-            'Damage per attack' : round(unmodified_damage[index],5),
         }
     }
     return Object.entries(data).map(e => e[0]+': '+e[1]);
 }
 
 export const data = {
-    labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+    labels: levels,
     datasets: [
       {
         label: "Fighter Baseline",
@@ -109,33 +110,31 @@ export const data = {
         pointHoverRadius: 5,
       },
       {
-        label: "Fighter Baseline (External advantage source)",
-        data: fighter_adv_DPR,
+        label: "Arcane Trickster",
+        data: arcane_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#7f513e',
-        backgroundColor: '#fff',
-        pointRadius: 4,
-        pointHoverRadius: 5,
-        borderDash: [5,],
-      },
-      {
-        label: "Rogue (BA advantage generation)",
-        data: ba_DPR,
-        cubicInterpolationMode: 'monotone',
-        borderColor: '#555752',
+        borderColor: '#444',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
       },
       {
-        label: "Rogue (External advantage source)",
-        data: ext_DPR,
+        label: "Phantom",
+        data: phantom_DPR,
         cubicInterpolationMode: 'monotone',
-        borderColor: '#555752',
+        borderColor: '#888',
         backgroundColor: '#fff',
         pointRadius: 4,
         pointHoverRadius: 5,
-        borderDash: [5,],
+      },
+      {
+        label: "Swashbuckler",
+        data: swash_DPR,
+        cubicInterpolationMode: 'monotone',
+        borderColor: '#ccc',
+        backgroundColor: '#fff',
+        pointRadius: 4,
+        pointHoverRadius: 5,
       },
     ],
 };
