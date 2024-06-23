@@ -18,14 +18,6 @@ export const cards = writable([
         tags : ['D&D 5e', 'Classes']
     },
     {
-        title : "No, you shouldn't dip Paladin 2",
-        blurb : [
-            "It’s no secret that people love Smite. Who wouldn’t? It lets you roll more dice, and everybody loves that.",
-            "Except Smite has a horrible, dark secret. It’s not much damage, and it’s never worth the cost of your precious spell slots, nor the danger it puts you in."
-        ],
-        tags : ['D&D 5e', 'Theory']
-    },
-    {
         title : "A weighty decision: Medium vs Heavy Armor",
         blurb : [
             "Ever wondered why most characters are better off wearing medium armor?",
@@ -92,5 +84,11 @@ export const cards = writable([
             "Want to play a worker of wonders? Smite undead, fiends, lycanthropes and other evil beings harnessing the power of myths and superstition? Recall long-lost information through esoteric means and rites? The thaumaturge is for you! This guide exists to help players, both old and new to pathfinder 2e, create the strongest and most fun builds with this versatile class."
         ],
         tags : ['PF2e', 'Classes']
+    },{
+        title : "Healing: An Unhealthy Mechanic",
+        blurb : [
+            "todo"
+        ],
+        tags : ['D&D 5e', 'Theory']
     },
 ])
