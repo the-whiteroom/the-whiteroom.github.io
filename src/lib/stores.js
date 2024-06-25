@@ -26,13 +26,13 @@ export const cards = writable([
         ],
         tags : ['D&D 5e', 'Theory']
     },
-    {
-        title : "Ranged vs melee",
-        blurb : [
-            "words",
-        ],
-        tags : ['D&D 5e', 'Theory']
-    },
+    //{
+    //    title : "Ranged vs melee",
+    //    blurb : [
+    //        "words",
+    //    ],
+    //    tags : ['D&D 5e', 'Theory']
+    //},
     {
         title : "On tanking",
         blurb : [
@@ -57,20 +57,20 @@ export const cards = writable([
         ],
         tags : ['D&D 5e', 'Spells']
     },
-    {
-        title : "PF2e: it's just better",
-        blurb : [
-            "words",
-        ],
-        tags : ['PF2e']
-    },
-    {
-        title : "Druid: A simple guide to the game's most complicated class",
-        blurb : [
-            "words",
-        ],
-        tags : ['D&D 5e', 'Classes']
-    },
+    //{
+    //    title : "PF2e: it's just better",
+    //    blurb : [
+    //        "words",
+    //    ],
+    //    tags : ['PF2e']
+    //},
+    //{
+    //    title : "Druid: A simple guide to the game's most complicated class",
+    //    blurb : [
+    //        "words",
+    //    ],
+    //    tags : ['D&D 5e', 'Classes']
+    //},
     {
         title : "Hold Person: An overrated spell",
         blurb : [
@@ -84,11 +84,12 @@ export const cards = writable([
             "Want to play a worker of wonders? Smite undead, fiends, lycanthropes and other evil beings harnessing the power of myths and superstition? Recall long-lost information through esoteric means and rites? The thaumaturge is for you! This guide exists to help players, both old and new to pathfinder 2e, create the strongest and most fun builds with this versatile class."
         ],
         tags : ['PF2e', 'Classes']
-    },{
-        title : "Healing: An Unhealthy Mechanic",
-        blurb : [
-            "todo"
-        ],
-        tags : ['D&D 5e', 'Theory']
     },
+    //{
+    //    title : "Healing: An Unhealthy Mechanic",
+    //    blurb : [
+    //        "todo"
+    //    ],
+    //    tags : ['D&D 5e', 'Theory']
+    //},
 ])
