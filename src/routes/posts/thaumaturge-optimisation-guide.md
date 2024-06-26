@@ -31,7 +31,7 @@ I use <Rating content="Blue" ratings={[4]} stars={false} bold={false}/> to deter
 <p/><Rating content="Yellow" ratings={[2]} stars={false} bold={false}/> sort of serves a double purpose. Abilities ranked yellow are either kind of mediocre or effective but only in somewhat niche situations. Take these either if you really like them or are certain those situations will come up often and a higher rated option couldn’t do the same.
 
 <p/><Rating content="Red" ratings={[1]} stars={false} bold={false}/> is bad. These options are generally just bad. Even if they work in certain situations, those either never come up or are just not that hard to overcome anyway. Only take a red option if you really want to for flavour purposes.
-
+<p/>
 <table>
     <tr style="font-weight: bold">
         <td>Colour</td>
@@ -191,7 +191,7 @@ Gnomes make excellent dexturges. They have a great ability score array, with nat
 - <Rating content="Grim Insight" ratings={[2]}/> You’ve got really good saving throws, and fear is a common effect. Partially redundant at level 9, but automatically making foes off-guard is really nice.
 - <Rating content="Illusion Sense" ratings={[2]}/> You get a bonus against illusions. Could be nice if you’re doing the scout/searcher role with a Lantern.
 - <Rating content="Inventive Offensive" ratings={[2]}/> Meh. You can already access plenty of weapons that already have the relevant traits. 
-- <Rating content="Life Giving magic" ratings={[2]}/> Casting an innate cantrip gives you temporary hit points. The amount is low and the duration is short. Still, it’s a reaction that gives you more durability. Surprisingly not a great combination with the (Glass) Shield cantrips, since their reactions already reduce far more damage.
+- <Rating content="Life Giving Magic" ratings={[2]}/> Casting an innate cantrip gives you temporary hit points. The amount is low and the duration is short. Still, it’s a reaction that gives you more durability. Surprisingly not a great combination with the (Glass) Shield cantrips, since their reactions already reduce far more damage.
 - <Rating content="Natural Performer" ratings={[1]}/> Performance isn’t a useful skill and their feats are near useless for someone with your capabilities.
 - <Rating content="Razzle Dazzle" ratings={[1]}/> You don’t have any means of blinding or dazzling a creature that would benefit from this feat. If you do, this can a good pick for those effects with a low duration, though you might want to just retrain for it once you get such a reliable feature.
 - <Rating content="Theoretical Acumen" ratings={[4]}/> There is no class better suited to the use of this ability. You can invest into most of the skills the feat replaces decently, but being able to use your Esoteric Lore modifier for a whole Saving Throw is just fantastic, even if it is just once per day.

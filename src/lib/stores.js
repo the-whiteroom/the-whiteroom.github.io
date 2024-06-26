@@ -26,25 +26,18 @@ export const cards = writable([
         ],
         tags : ['D&D 5e', 'Theory']
     },
-    //{
-    //    title : "Ranged vs melee",
-    //    blurb : [
-    //        "words",
-    //    ],
-    //    tags : ['D&D 5e', 'Theory']
-    //},
     {
-        title : "On tanking",
+        title : "No, you shouldn't dip Paladin 2",
         blurb : [
-            "The “tank” is one of the most enduring fantasy archetypes ever. The Barbarian, protecting his companions from a mighty foe. The Paladin, an impassable wall holding back the forces of darkness. The Fighter, a whirlwind of steel and death that no enemy may pass unscathed. With how fundamental a part of the genre it is, anyone would reasonably expect that D&D - a game in this genre - would support it."
+            "It’s no secret that people love Smite. Who wouldn’t? It lets you roll more dice, and everybody loves that.",
+            "Except Smite has a horrible, dark secret. It’s not much damage, and it’s never worth the cost of your precious spell slots, nor the danger it puts you in."
         ],
         tags : ['D&D 5e', 'Theory']
     },
     {
-        title : "Misconceptions about action economy",
+        title : "On tanking",
         blurb : [
-            "History of the term (zee bashew, rpgs, comp pokemon), defining action economy in a turn based game, doing more isn't always good, debuffing enemies is good action economy",
-            "Examples of good/bad/conditional/overated (Conjure Animals, Hypno Pattern, PWT, SW, Haste, Quicken)",
+            "The “tank” is one of the most enduring fantasy archetypes ever. The Barbarian, protecting his companions from a mighty foe. The Paladin, an impassable wall holding back the forces of darkness. The Fighter, a whirlwind of steel and death that no enemy may pass unscathed. With how fundamental a part of the genre it is, anyone would reasonably expect that D&D - a game in this genre - would support it."
         ],
         tags : ['D&D 5e', 'Theory']
     },
@@ -54,6 +47,27 @@ export const cards = writable([
             "Spiritual Weapon is one of the most iconic Cleric spells in D&D 5e.",
             "But does it live up to its reputation as a potent and versatile offensive spell?",
             "Not at all.",
+        ],
+        tags : ['D&D 5e', 'Spells']
+    },
+    {
+        title : "Thaumaturge optimisation guide",
+        blurb : [
+            "Want to play a worker of wonders? Smite undead, fiends, lycanthropes and other evil beings harnessing the power of myths and superstition? Recall long-lost information through esoteric means and rites? The thaumaturge is for you! This guide exists to help players, both old and new to pathfinder 2e, create the strongest and most fun builds with this versatile class."
+        ],
+        tags : ['PF2e', 'Classes']
+    },
+    {
+        title : "Healing: An Unhealthy Mechanic",
+        blurb : [
+            "todo"
+        ],
+        tags : ['D&D 5e', 'Theory']
+    },
+    {
+        title : "Hold Person: An overrated spell",
+        blurb : [
+            "Hold Person is often touted as a fantastic spell. But is it really that great?",
         ],
         tags : ['D&D 5e', 'Spells']
     },
@@ -71,24 +85,18 @@ export const cards = writable([
     //    ],
     //    tags : ['D&D 5e', 'Classes']
     //},
-    {
-        title : "Hold Person: An overrated spell",
-        blurb : [
-            "Hold Person is often touted as a fantastic spell. But is it really that great?",
-        ],
-        tags : ['D&D 5e', 'Spells']
-    },
-    {
-        title : "Thaumaturge optimisation guide",
-        blurb : [
-            "Want to play a worker of wonders? Smite undead, fiends, lycanthropes and other evil beings harnessing the power of myths and superstition? Recall long-lost information through esoteric means and rites? The thaumaturge is for you! This guide exists to help players, both old and new to pathfinder 2e, create the strongest and most fun builds with this versatile class."
-        ],
-        tags : ['PF2e', 'Classes']
-    },
     //{
-    //    title : "Healing: An Unhealthy Mechanic",
+    //    title : "Misconceptions about action economy",
     //    blurb : [
-    //        "todo"
+    //        "History of the term (zee bashew, rpgs, comp pokemon), defining action economy in a turn based game, doing more isn't always good, debuffing enemies is good action economy",
+    //        "Examples of good/bad/conditional/overated (Conjure Animals, Hypno Pattern, PWT, SW, Haste, Quicken)",
+    //    ],
+    //    tags : ['D&D 5e', 'Theory']
+    //},
+    //{
+    //    title : "Ranged vs melee",
+    //    blurb : [
+    //        "words",
     //    ],
     //    tags : ['D&D 5e', 'Theory']
     //},
