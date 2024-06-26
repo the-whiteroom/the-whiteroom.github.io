@@ -5,7 +5,6 @@ tags:
 - Theory
 related:
 - What is a damage dealer, anyway?
-- Ranged vs melee
 ---
 <script>
     import { Line } from 'svelte-chartjs';

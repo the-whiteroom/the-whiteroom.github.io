@@ -4,7 +4,6 @@ tags:
 - D&D 5e
 - Spells
 related:
-- Misconceptions about action economy
 ---
 <script>
     import { Line } from 'svelte-chartjs';

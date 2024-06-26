@@ -5,7 +5,6 @@ tags:
 - Classes
 related:
 - What is a damage dealer, anyway?
-- Ranged vs melee
 ---
 <script>
     import { Line, Radar } from 'svelte-chartjs';

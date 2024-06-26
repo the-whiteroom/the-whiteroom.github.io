@@ -4,7 +4,6 @@ tags:
 - D&D 5e
 - Theory
 related:
-- Ranged vs melee
 - On tanking
 - "A weighty decision: Medium vs Heavy Armor"
 - "Rogue: if confirmation bias was a class"

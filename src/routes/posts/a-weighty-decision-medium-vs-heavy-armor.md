@@ -5,7 +5,6 @@ tags:
 - Theory
 related:
 - On tanking
-- Ranged vs melee
 ---
 Choosing between medium and heavy armor can often be a challenge. It’s obvious when to wear light armor; if you’re a dexterity focused character, or if it’s the only armor you have proficiency in, pick it. But medium and heavy, due to being closer in design (both need around a 14 in a certain stat to use effectively), can often be harder to choose between.
 
