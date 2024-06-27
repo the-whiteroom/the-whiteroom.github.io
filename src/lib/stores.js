@@ -60,7 +60,8 @@ export const cards = writable([
     {
         title : "Healing: An Unhealthy Mechanic",
         blurb : [
-            "todo"
+            "Healing is a classic fantasy archetype, so many players, especially those playing clerics, turn to it in a vain attempt to keep their allies alive.",
+            "However, DnD 5e heavily disincentives this method of support in several ways, leading to it being a poor choice in nearly all cases."
         ],
         tags : ['D&D 5e', 'Theory']
     },
