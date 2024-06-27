@@ -20,4 +20,6 @@
     }
 </script>
 
-{#each colours as colour,i}<span style="color:{override || ['red','#bf8f00','#538135','#2e75b5'][ratings[i]-1]}; font-weight:{bold?'bold':'normal'};">{colour}</span>{/each}{#if stars}{#each ratings as rating,i}<span style="color:{override || ['red','#bf8f00','#538135','#2e75b5'][rating-1]}">{'★'.repeat(rating)}</span>{#if i!=ratings.length-1}<span style="font-weight:bold;">/</span>{/if}{/each}{/if}
+{#each colours as colour,i}<span style="color:{override || ['red','#bf8f00','#538135','#2e75b5'][ratings[i]-1]}; font-weight:{bold?'bold':'normal'};">{colour}</span>{/each}
+
+{#if stars}{#each ratings as rating,i}<span style="color:{override || ['red','#bf8f00','#538135','#2e75b5'][rating-1]}">{'★'.repeat(rating)}</span>{#if i!=ratings.length-1}<span style="font-weight:bold;">/</span>{/if}{/each}{/if}
