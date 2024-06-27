@@ -37,7 +37,7 @@ function footer(tooltipItems){
     let data;
     if(tooltipItems[0].dataset.label == 'Fighter Baseline'){
         data = {
-            'CHA modifier': '+'+dex[index],
+            'DEX modifier': '+'+dex[index],
             'Target AC': ac[index],
             'Hit chance': round(fighter_hit[index]*100,2)+'%',
             'Attacks' : fighter_attacks[index],
@@ -47,7 +47,7 @@ function footer(tooltipItems){
         }
     } else if(tooltipItems[0].dataset.label == 'Warlock Baseline'){
         data = {
-            'DEX modifier': '+'+cha[index],
+            'CHA modifier': '+'+cha[index],
             'Target AC': ac[index],
             'Hit chance': round(warlock_hit[index]*100,2)+'%',
             'Attacks' : warlock_attacks[index],
