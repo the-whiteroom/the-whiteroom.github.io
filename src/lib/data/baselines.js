@@ -109,5 +109,6 @@ export const options = {
                 afterBody : footer
             }
         }
-    }
+    },
+    maintainAspectRatio: false,
 };

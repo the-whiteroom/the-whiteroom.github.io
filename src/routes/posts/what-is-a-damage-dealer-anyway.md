@@ -47,7 +47,9 @@ Dedicated damage dealers such as fighters are held to a much higher standard, as
 
 The Fighter baseline is used because it's the least investment necessary to do more than cantrip damage (see below), and is easily improved upon.
 
-<Line data={baseline_data} options={baseline_options}></Line>
+<div style="height: 300px">
+  <Line data={baseline_data} options={baseline_options}></Line>
+</div>
 
 ### What isn't a damage dealer?
 This is a game where almost every character has some way to deal a little bit of damage, usually around the Warlock baseline. Many characters that aren't (dedicated) damage dealers do almost the same damage, often referred to as 'cantrip damage', since it's roughly the amount of damage a Warlock using cantrips can achieve. However, what sets the damage dealers apart is that they do notably more damage than the vast majority of characters - because merely dealing damage isn't sufficient to be a damage dealer, in the same way that just taking the Defense or Interception fighting style doesn't make one a tank.
