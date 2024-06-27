@@ -112,10 +112,10 @@ This section is to provide basic evaluations of some generic feat types that man
 #### Common Ancestries:
 The following ancestries are available in all campaigns.
 
-<Rating content="Dwarf" ratings={[1]}/><br>
+##### <Rating content="Dwarf" ratings={[1]} bold={false}/><br>
 Charisma flaw, horrible speed, and very mediocre feats. 10 HP and darkvision don’t mean much, especially now that the leshy and orc are core ancestries. There are certainly ancestries in the uncommon and rare categories worse than this, and you do have some alright feats past level 9, which could bump this to <Rating content="yellow" ratings={[2]} bold={false} stars={false}/>, but as it stands it’s the worst option in the core selection by a mile.
 
-<p/><Rating content="Elf" ratings={[4]}/><br>
+##### <Rating content="Elf" ratings={[4]} bold={false}/>
 The alternate ability boost rules have made the elf a stand-out in optimisation guides everywhere. With 6 ancestral hitpoints, they are still on the more fragile side, but they have excellent feats and some standout heritages. You will absolutely find something useful here, especially for dexturges.
 
 **Elf Heritages:**
@@ -168,7 +168,7 @@ The alternate ability boost rules have made the elf a stand-out in optimisation 
 **17<sup>th</sup> Level Elf Feats:**
 - <Rating content="Magic Rider" ratings={[2]}/> Most Teleportation effects are uncommon, and if a teleport is relevant to your campaign it’s incredibly likely the GM will just have it work for the purposes of moving the story forward.
 
-<Rating content="Gnome" ratings={[4]}/><br>
+##### <Rating content="Gnome" ratings={[4]} bold={false}/><br>
 Gnomes make excellent dexturges. They have a great ability score array, with native boost to constitution and charisma and a flaw in strength. Their ancestry feats are well suited to a variety of thaumaturge builds, including those who wish to supplement their build with innate spellcasting.
 
 **Gnome Heritages:**
@@ -215,7 +215,7 @@ Gnomes make excellent dexturges. They have a great ability score array, with nat
 **13<sup>th</sup> Level Gnome Feats:**
 - <Rating content="Instinctive Obfuscation" ratings={[3]}/> Impose a powerful flat check on an enemy’s attack against you. Save this for powerful spells or a nasty attack you’ve already identified the foe to have to outright negate their ability. Depending on how you define being attacked, this might apply to saving throw abilities too, which bumps this to <Rating content="Blue" ratings={[4]} bold={false} stars={false}/> for its sheer versatility.
 
-<Rating content="Goblin" ratings={[4]}/><br>
+##### <Rating content="Goblin" ratings={[4]} bold={false}/><br>
 Goblins are fun. A lot of golarion lore posits them as being able to use seemingly mundane items that suddenly work in their possession, if only for a short while, which fits a thaumaturge well enough. A wisdom flaw is annoying but not insurmountable. Invest into stealth and don’t negate your will saves, and you can make use of the default boosts well enough for a hardy finesse ‘turge. Any other build will probably just use alternate boosts, unless you want some extra constitution as a midranger. 
 
 **Goblin Heritages:**
@@ -268,7 +268,7 @@ Goblins are fun. A lot of golarion lore posits them as being able to use seeming
 **17<sup>th</sup> Level Goblin Feats:**
 - <Rating content="Reckless Abandon" ratings={[3]}/> There are plenty of uses to near-total damage immunity on your turn, especially when it can be activated as a free action. This can be very useful when it comes to your action economy, enabling you to spend less actions having to avoid certain hazards and threats and just charging recklessly wherever it is you must go.
 
-<Rating content="Halfling" ratings={[4]}/><br>
+##### <Rating content="Halfling" ratings={[4]} bold={false}/><br>
 The Halfling has a decent default ability array. Dexterity and Wisdom are solid scores for the thaumaturge to boost, especially for a ranged build that can safely ignore strength for the most part. There’s not much that isn’t obvious to most players here; You came for Halfling Luck.
 
 **Halfling Heritages:**
@@ -311,7 +311,7 @@ The Halfling has a decent default ability array. Dexterity and Wisdom are solid 
 **17<sup>th</sup> Level Halfling Feats:**
 - <Rating content="Shadow Self" ratings={[4]}/> Free invisibility once per hour when you succeed on a hide or sneak check against all your foes, up to 1 minute or until you take a hostile action. That on its own is already great, but you also make your foes think you are hidden in another space, and this seems to be a non-magical non-illusion effect. A great capstone for stealth builds.
 
-<Rating content="Human" ratings={[4]}/><br>
+##### <Rating content="Human" ratings={[4]} bold={false}/><br>
 The alternate attribute boosts rule made humans a lot worse in most optimisation rankings simply because their free boosts were no longer such a valuable feature, alongside the increase in options that various new ancestries offer. The human still remains a potent choice for the thaumaturge thanks to their ready access to many general feats and the power of <Rating content="Natural Ambition" ratings={[4]}/> on the thaumaturge. The ancestry peters out a bit by the end, but by that point you can just drop a slot on Adopted Ancestry.
 
 **Human Heritages:**
@@ -358,7 +358,7 @@ The alternate attribute boosts rule made humans a lot worse in most optimisation
 **17<sup>th</sup> Level Human Feats:**
 - <Rating content="Heroic Presence" ratings={[2]}/> Rather mediocre as capstone feats go, but it’s still free temporary HP (which will likely disappear immediately) and bonuses to will saves. A little redundant with the Regalia, but this does apply regardless of range and can also affect your party’s minions. 
 
-<Rating content="Leshy" ratings={[3]}/><br>
+##### <Rating content="Leshy" ratings={[3]} bold={false}/><br>
 These little plants became so popular and beloved that Paizo decided they had to become core ancestries. The Leshies have a very lovely intelligence flaw, but no native charisma boost, so you may want to use alternate boost instead if you want to maximise your charisma, but plenty of builds can live just fine with a +3. A lot of their options are just pillaged from the elf and orc lists, so you might just use them, but they have a lot of interesting options on their own, and are rather hardy for being little plants. You could draw from real world stories and treatments that involve the use of flora to describe the use of your esoterica. 
 
 **Leshy Heritages:**
@@ -406,7 +406,7 @@ These little plants became so popular and beloved that Paizo decided they had to
 - <Rating content="Flourish and Ruin" ratings={[2]}/> Field of life is only practical when fighting undead or outside of combat, in which case it restores 10d8 (45 on average) to each party member. Tangling creepers can create difficult terrain in a great area; However, many enemies by this level will have flight capabilities and the spell requires your spell attacks and DCs for any further effect. Even with a spellcasting proficiency, your spell attacks are mediocre, and you should certainly have better healing by now. 
 - <Rating content="Regrowth" ratings={[3]}/> You can cast regenerate. This spell makes one target nigh-invulnerable unless your enemies use fire or acid damage, and you should have no problem figuring that out by this level. 
 
-<Rating content="Orc" ratings={[3]}/><br>
+##### <Rating content="Orc" ratings={[3]} bold={false}/><br>
 If you want to get into the melee, you can do much worse than the orc. It has a powerful chassis, as tanky as a dwarf without suffering a speed penalty, and some decent heritage options, as well as a fantastic array of feats. If you want to be hard to kill, the Orc can certainly help with that.
 
 **Orc Heritages:**
@@ -461,10 +461,10 @@ The remaster has changed it such that the aiuvarin and the dromaar (what were pr
 
 Additionally, many uncommon heritages have lineage feats at level 1, tying you to a specific ancestor or type of creature from which you are descended. You can only have one lineage feat and you can only pick them at level 1, and they can’t be retrained, so keep that in mind.
 
-<Rating content="Aiuvarin" ratings={[3]}/><br>
+##### <Rating content="Aiuvarin" ratings={[3]} bold={false}/><br>
 The elf feat list is a fantastic choice on nearly any ancestry. If your base class has a more reliable base chassis than the elf, such as the orc or gnome, this is a decent pick to improve your ability in both ranged and melee. The only reason this isn’t blue is because of the elf’s powerful base speed and easier access to the Ancient Elf heritage, but this is still a great pick. The unique aiuvarin feats aren’t much to write home about unless you can take Elf Avatism for Ancient Elf in a free archetype game.
 
-<p/><Rating content="Changeling (U)" ratings={[3]}/><br>
+##### <Rating content="Changeling (U)" ratings={[3]} bold={false}/>
 If you really want to make your character’s mommy issues a part of their mechanics, the changeling is pretty good for it. Children of hags turning into thaumaturges to ward off the Call and hunt down evil creatures is quite fitting, and there’s some pretty good stuff here, even if you have to wade through some garbage to get to it.
 
 **1<sup>st</sup> Level Changeling Lineage Feats:**
@@ -504,10 +504,10 @@ If you really want to make your character’s mommy issues a part of their mecha
 - <Rating content="Crone's Cruelty" ratings={[1]}/> Single Target Incapacitation spell that doesn’t heighten. Pass.
 - <Rating content="Stormy Elements" ratings={[3]}/> Use Invoke The Elements every encounter. A fantastic bonus to your defensive capabilities.
 
-<p/><Rating content="Dromaar" ratings={[2]}/><br>
+##### <Rating content="Dromaar" ratings={[2]} bold={false}/>
 The dromaar aren’t bad, I’m just not sure why you wouldn’t play a normal orc instead. You get the orc’s solid base chassis and a heritage that actually gives you something from the get-go (or even just take another versatile heritage) on top of already accessing its feat list. Maybe you’d like it on a hardy gnome?
 
-<p/><Rating content="Nephilim (U)" ratings={[3]}/><br>
+##### <Rating content="Nephilim (U)" ratings={[3]} bold={false}/>
 This new heritage takes the place of all the former planar heritages, though the aphorite and ganzi feats have not been reprinted in Player Core. As of current, it includes all the feats belonging to both the Aasimar and the Tiefling, either reprinted from the APG or changed up a bit. In general this ancestry is most powerful when accessing the fiendish feats, as they provide some powerful bonuses. PFS has ruled that you can use aasimar and tiefling feats as a nephilim, though you may only pick one or the other and can’t treat them interchangeably (though weirdly you can take something like an angelkin lineage and tiefling feats); At present, I will only be reviewing the feats presented in Player Core for the Nephilim.
 
 **1<sup>st</sup> Level Nephilim Lineage Feats:**
