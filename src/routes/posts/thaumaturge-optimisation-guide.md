@@ -215,7 +215,7 @@ Gnomes make excellent dexturges. They have a great ability score array, with nat
 **13<sup>th</sup> Level Gnome Feats:**
 - <Rating content="Instinctive Obfuscation" ratings={[3]}/> Impose a powerful flat check on an enemy’s attack against you. Save this for powerful spells or a nasty attack you’ve already identified the foe to have to outright negate their ability. Depending on how you define being attacked, this might apply to saving throw abilities too, which bumps this to <Rating content="Blue" ratings={[4]} bold={false} stars={false}/> for its sheer versatility.
 
-##### <Rating content="Goblin" ratings={[4]} bold={false}/><br>
+##### <Rating content="Goblin" ratings={[3]} bold={false}/><br>
 Goblins are fun. A lot of golarion lore posits them as being able to use seemingly mundane items that suddenly work in their possession, if only for a short while, which fits a thaumaturge well enough. A wisdom flaw is annoying but not insurmountable. Invest into stealth and don’t negate your will saves, and you can make use of the default boosts well enough for a hardy finesse ‘turge. Any other build will probably just use alternate boosts, unless you want some extra constitution as a midranger. 
 
 **Goblin Heritages:**
