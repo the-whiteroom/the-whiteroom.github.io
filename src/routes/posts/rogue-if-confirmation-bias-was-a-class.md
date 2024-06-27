@@ -12,6 +12,7 @@ related:
     import { data as subclass_data, options as subclass_options } from '$lib/data/rogue_subclasses.js';
     import { data as ea_data, options as ea_options } from '$lib/data/elven accuracy.js';
     import { data as skill_data, options as skill_options } from '$lib/data/rogue skills.js';
+    import { data as durability_data, options as durability_options } from '$lib/data/rogue durability.js';
     import {
         Chart as ChartJS,
         Title,
@@ -101,6 +102,11 @@ Furthermore, fourteen of the eighteen skills are based off mental stats, and one
 
 ### Durability
 Rogues _do_ have one resource - their health. It's not great, being a d8, on par with spellcasters like Bard, Cleric, and Warlock, and neither is their AC, being limited to light armor. This caps them at a maximum AC of 17, and many rogues, particularly those that invest in other stats to boost their skill checks, can't afford a super-high Constitution score either. In practice, Rogues need feats like Crossbow Expert and Sharpshooter, so they can't boost their DEX to +5 until very late in the game. When other classes beat 17AC out-of-the-box or with a single-level dip, Rogues are one of the least durable classes in the game. Their lack of access to potent defensive boosters like the *Shield* spell further worsens this.
+
+Against an enemy of CR equal to level (a Medium-difficulty encounter, of which parties should be able to survive 6-8), a Rogue dies in about 2 turns.
+<div style="height: 300px">
+    <Line data={durability_data} options={durability_options}/>
+</div>
 
 Rogues get some features that are meant to reduce the damage they take. Uncanny Dodge can, for the cost of a reaction, reduce the damage of a single attack by half. This makes it nearly useless against enemies with Multiattack or against multiple enemies - which is essentially the entire time.
 
