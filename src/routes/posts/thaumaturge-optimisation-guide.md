@@ -612,7 +612,7 @@ Then there’s Intensify Invulnerability. This is a one action feature that all 
 ### Implements
 The thaumaturge’s implements are sort of its subclass equivalent. They can push the thaumaturge into certain roles and playstyles to an extent, but in general they are an addition, rather than a definition. You can get up to 3 implements over the course of your adventuring career, with one of your first two implements eventually hitting paragon, the other at adept, and your third implement staying at initiate unless you take a feat to boost it. 
 
-<p/><Rating content="Amulet" ratings={[3]}/><br>
+##### <Rating content="Amulet" ratings={[3]} bold={false}/>
 Don’t like getting hit? Why not try waving a shiny gem in your foe’s face to make it hurt less! A solid choice for thaumaturges in the frontlines who may want to try tanking a few extra hits when the main tank goes down or needs to fall back. You can also protect your allies with the ability, effectively doubling as a weaker champion’s reaction for the price of an implement. A worthy trade in my opinion. 
 
 - <Rating content="Initiate Benefit" ratings={[3]}/> Grant champion level resistance against a damaging effect caused by your EV target. The only actual range requirement here is that your ally be within 15 feet of you, otherwise you and your EV target can be shooting each other from a mile away and you’ll still be able to activate this resistance if you have a reaction available. It does have the manipulate trait though, so watch out for Reactive Strikes. A simple but effective reaction, which the thaumaturge doesn’t have much of.
@@ -620,7 +620,7 @@ Don’t like getting hit? Why not try waving a shiny gem in your foe’s face to
 - <Rating content="Intensify Vulnerability" ratings={[3]}/> Good Amulet builds will almost never go down. This is effectively the esoteric warden class feat but applicable every turn. It’s incredibly powerful and can basically shut down casters or other monsters who rely on saving throws given your excellent progression. 
 - <Rating content="Paragon Benefit" ratings={[4]}/> AoE effects mean nothing to your party anymore. With Esoteric Reflexes (no ifs about it, you took it the moment it became available) you’re able to push through most damage coming your party’s way, and your excellent save progression and powerful save boosters make you a real nightmare to beat down. A fun thing you can do with esoteric reflexes and a backfire mantle is have an ally throw a bomb or some other minor attack of a damage you believe the enemies would deal into your team just before combat begins, all negate it from the resistance, and then gain a lingering resistance to the damage the enemies might deal in advance of your first turn anyway. 
 
-<p/><Rating content="Bell" ratings={[2]}/><br>
+##### <Rating content="Bell" ratings={[2]} bold={false}/>
 Just pick up another implement. The bell tries to do something I think is fun, but then expects you to power through olympic hurdles to actually achieve it. It shares design space with the amulet as a defence oriented reaction, but it can enable better offensive power for your party by applying status penalties to DCs you and your allies target. However, its base ability is quite weak and its upgrades don’t do much to make the investment feel worth it. I would probably just pick up the amulet and reflavour it as a bell if that’s what you’re interested in.
 
 - <Rating content="Initiate Benefit" ratings={[2]}/> There’s a lot of things that don’t go well for the Bell here. Firstly, the reaction has the Mental trait, which means mindless creatures completely bypass the effect. It is also a manipulate effect, which means it triggers reactive strikes. It does have a better range than the amulet when it comes to directly or indirectly defending allies, but it forces the target to make a save with no effect on a success. The reaction <i>does</i> target a save the target likely struggles with depending on the effect, and the conditions it imposes are good. However, the duration also varies wildly in effectiveness since it ends on your next turn rather than a more consistent 1 round effect. If stupefied, the target doesn’t even have to make a flat check to avoid losing the triggering spell. Surely you could have just frightened a foe or have an ally or yourself grapple the caster. 
@@ -629,7 +629,7 @@ Just pick up another implement. The bell tries to do something I think is fun, b
 - <Rating content="Paragon Benefit" ratings={[2]}/> In a vacuum, this ability is decent. You don’t take an implement to paragon for just being decent. There is nothing much to say here, the condition values increase a bit, which is <i>alright</i>, to be nice about it, and you can target any creature, but the effect only lasts till your turn starts. 
 Just pick up another implement.
 
-<p/><Rating content="Chalice" ratings={[2]}/><br>
+##### <Rating content="Chalice" ratings={[2]} bold={false}/>
 Healing is something the thaumaturge can’t do incredibly well without spells and archetypes, but the chalice aims to correct that. Unfortunately, it failed the roll. The chalice does some decent healing for being a “resourceless” effect, but that’s really all it does until level 17. Just archetype into blessed one or medic or something. You are not a healbot.
 
 - <Rating content="Initiate Benefit" ratings={[2]}/> You give out some okay temporary HP that stays for a round to either yourself or an adjacent ally. You can also trigger a healing effect that heals 3 HP per level you have, but it only occurs once per ten minutes. This is not great. It is an alright way to get around negative healing limitations at low levels, but you should probably just leave the healing to just about anyone else, as this is not worth the action it takes nor the reactive strike it can trigger. If your GM allows you to trigger this with Paired Link, it gets a bit better, though still not worth an implement (and Paired Link isn’t all that anyway).
@@ -637,7 +637,7 @@ Healing is something the thaumaturge can’t do incredibly well without spells a
 - <Rating content="Intensify Vulnerability" ratings={[2]}/> More healing, but only if you waste effectively three actions on your turn to activate this, make a strike, and if it hits you spend an action to use the chalice. A fantastic use of your actions for the round, the enemies are sure to quake in their boots.
 - <Rating content="Paragon Benefit" ratings={[3]}/> More hea- oh, what? The chalice actually does something else now? It’s been so long, I forgot there were other actions! This effect is honestly a really nice condition cleanser and can even counteract other harmful effects targeting the recipient, it’s just a shame it took 17 levels to get here. You also probably have someone else who is better at cleansing these conditions than you are by this level, though it’s pretty action-efficient. Probably would be having more fun doing something else though.
 
-<p/><Rating content="Lantern" ratings={[3]}/><br>
+##### <Rating content="Lantern" ratings={[3]} bold={false}/>
 This implement is one of my personal favourites. It’s got a host of solid features that’ll find use in just about any game that isn’t the GM simply throwing bags of meat towards the players. It’s an especially potent choice in games of illusions, mystery, and secrets of the shadows, and an interesting pick given that the subclass is very much a bright shining light in the middle of the darkness. Don’t expect to be sneaking in the dark a whole lot. 
 
 - <Rating content="Initiate Benefit" ratings={[3]}/> Unveil it all. This is basically free guidance on all your seek and recall knowledge checks when within 20 feet of a target, and enables you to do what is essentially two exploration abilities at once. Be sure to invest in your Perception to make the most use of this feature, and stick real close to anyone else in the party with a solid Perception bonus. There’s also no limit on the secret check, it happens as long as you are within range of a triggering effect, so if you have the time and the right space you can just walk around an area a few times to determine whether or not there are any traps in the area. If you can get your GM to accept the status bonus to perception applying to initiative, this is an easy <Rating content="blue" ratings={[3]} bold={false} stars={false}/>.
@@ -645,7 +645,7 @@ This implement is one of my personal favourites. It’s got a host of solid feat
 - <Rating content="Intensify Vulnerability" ratings={[3]}/> A bit situational, and bordering on a lower rating. However, automatic concealment removal is incredibly powerful, and a -2 status penalty to stealth and deception really hinders a lot of foes that aren’t just big dumb brutes. It also applies in social situations when you need to get answers out of someone and expect them to try weaselling their way out of it. You also increase the bonus from your initial benefit, which is a lovely sweetener. Pick up Tome and the relevant feats to recall <i>all</i> the knowledge.
 - <Rating content="Paragon Benefit" ratings={[2]}/> The Lantern does feel like an implement that gets worse over time. A discount true seeing is alright, and the radius expansion is okay, but it’s a really mediocre capstone for investing in an implement this long. Whatever implement you paired this with was probably what you were taking to paragon anyway. 
 
-<p/><Rating content="Mirror" ratings={[4]}/><br>
+##### <Rating content="Mirror" ratings={[4]} bold={false}/>
 The mirror’s an interesting implement. Its adept benefit is incredibly controversial, but the rest of their abilities offer some of the most freedom in the game. It’s incredible action compression, reach expansion, flank provision, at-will teleportation etc. This implement is for the creative minded players who can analyse a battlefield and want to make a real mess of a ‘turge. You might like what’s staring back at you, but your foes sure won’t.
 
 - <Rating content="Initiate Benefit" ratings={[4]}/> There’s so much to do here than I can really explain. Get high ground, increase your effective reach, increase the effectiveness of any auras or touch spells you have, activate 15 foot two action teleports with a movement ability right after etc. Having to keep this ability up every turn for an action (yes, the mirror does go down at the start of your next turn. You can’t exploit the wording to say it remains until you move) can seem intensive, which is why i would not recommend this to new players or those looking to play a more “simple” thaumaturge, but experienced players, especially those who play combats with detailed terrain can get a lot of use out of this feat. Additionally, RAW nothing actually stops you from using up to all of your actions using Mirror’s Reflection, because it’s not listed as an effect that ends the Reflection, but your GM might justifiably rule otherwise, but if allowed this can get real nasty. The only real limits here are your imagination and the GM’s level of permissiveness. 
@@ -654,7 +654,7 @@ The mirror’s an interesting implement. Its adept benefit is incredibly controv
 - <Rating content="Paragon Benefit" ratings={[4]}/> Free actions. Thaumaturges <i>love</i> free actions. Draw an item, strike a foe, seek in two different places. Deceptively simple, but a good mirror user will be an absolute monster with this. Just wait till level 19 when your EVs and IVs become free actions too!
 
 
-<p/><Rating content="Regalia" ratings={[4]}/><br>
+##### <Rating content="Regalia" ratings={[4]} bold={false}/>
 Kneel before greatness. The regalia is a fantastic implement for a support geared ‘turge leaning towards the charisma based skills. You’re really good at supporting your friends, even if you aren’t all that great at the skills you’re supporting them with. The Regalia feeds into other implements especially well, finding synergies with almost every other implement in the game, really cementing it as a must-have for any thaumaturge that wants to have their allies bask in the spotlights they create. 
 
 - <Rating content="Initiate Benefit" ratings={[3]}/> A permanent bonus to three charisma skills and your allies gain more benefits for following you in exploration (and perhaps even social) activities. You also gain an aura that protects you and your allies against fear and lessens its effect on them if they do become frightened. A solid bonus for a thaumaturge gearing up for a skill monkey build.
@@ -662,7 +662,7 @@ Kneel before greatness. The regalia is a fantastic implement for a support geare
 - <Rating content="Intensify Vulnerability" ratings={[2]}/> Just use Aid. It eats a reaction but you can survive just fine if you didn’t pick an implement that already provides a reaction, and most of those have good IVs to use anyway. 
 - <Rating content="Paragon Benefit" ratings={[4]}/> You’re the Party Face. You’re too competent to do silly things like critically failing on such basic tasks. In fact, you exude such confidence that even your most basic activities inspire others to follow your simple mastery.<br>Your aura also grows even stronger. Not only are your allies immune to flanking as long as you aren’t flanked (very powerful if you can find a feature like Deny Advantage to slap onto your chassis), They also reduce any status penalties from a wide list of conditions by 1 so long as you aren’t affected by the same. Given your excellent saving throws, that shouldn’t be a problem. Lead your comrades into the breach.
 
-<p/><Rating content="Tome" ratings={[4]}/><br>
+##### <Rating content="Tome" ratings={[4]} bold={false}/>
 Recall all the knowledge. The Tome Implement offers additional versatility to what is already one of the most versatile classes in the game. This is an excellent choice for any build that wants to learn as much information as possible about any situation that they are in, and be really damn good at exposing every detail of an enemy’s stat-block. It’s my personal favourite and arguably the best implement the class offers, and there’s no thaumaturge build in the game where this implement would ever go amiss.
 
 - <Rating content="Initiate Benefit" ratings={[2,3]}/> The tome is my personal favourite implement of all time, and yet I would not recommend starting play with it. The +1 circumstance bonus to <i>all</i> Recall Knowledge checks is powerful and basically outshines The Investigator’s Pursue a Lead when it comes to that activity, but starting with two extra skills isn’t that big of a deal. You are already trained in 9 skills at level 1 at <i>worst</i>, and you are basically scrambling to find extra skills that aren’t already likely covered by your party. You will generally be better served by picking another implement that has more immediate benefits at lower levels like the amulet or mirror, and so I would advise picking the tome up at 5th level to get more immediate use of its abilities, and being able to pick its adept benefit sooner.<br>
@@ -678,7 +678,7 @@ The real treasure here though, is the free Recall Knowledge. A free Recall Knowl
 <li>You win initiative. I don’t know if there’s a single other class with this powerful of an initiative booster, especially once you have a status and/or item bonus going on. You’ve got 17+ levels of nonsense to throw at your foes. Watch them do nothing but suffer as they wait fruitlessly for their turn to arrive someday.</li>
 <li>Don’t be a fool, kids. Read your books, and stay in school.</li>
 
-<p/><Rating content="Wand" ratings={[2]}/><br>
+##### <Rating content="Wand" ratings={[2]} bold={false}/>
 Blast. The wand is another interesting implement because it’s not really supposed to be something you use constantly or to substitute your strike actions for. I would say this build is more valuable for melee builds than it is ranged, since this gives you a solid ranged pseudo cantrip, though that does mean it’s a bit niche which is why it gets a yellow rating. Gets more fun as you level it up, though I wouldn’t recommend it as an initial implement.
 
 - <Rating content="Initiate Benefit" ratings={[3]}/> Use the damage booster as frequently and as early in an encounter as possible. This became slightly stronger post remaster since cantrips lost spellcaster modifiers and the wand didn’t so it’s a bit more consistent than most damage cantrips, at least at low levels. Pick Electricity as your first damage type, it’s the most consistent and least likely to face resistances. I generally don’t recommend using the wand as your main damage in an encounter, but a critical hit recharging the damage boost is a solid incentive to use it again to target foes out of your reach. 
@@ -687,7 +687,7 @@ Blast. The wand is another interesting implement because it’s not really suppo
 - <Rating content="Paragon Benefit" ratings={[4]}/> You get to choose between three different damage types with three different effects, and a truly extreme range increase. Oh, did I forget the ability to make 20 foot bursts?<br>
 Enjoy the discount fireballs. Remember that the failure effects apply to anyone who fails, not just your EV target! 
 
-<p/><Rating content="Weapon" ratings={[3]}/><br>
+##### <Rating content="Weapon" ratings={[3]} bold={false}/>
 Hitting things till they go down is a venerable tradition in the history of table-top roleplaying. The Weapon implement is certainly one of the more popular implements, and for good reason. The thaumaturge loves additional attacks given their high damage and tight action economy, and doesn’t have a lot of native reactions. It also alleviates their hand economy by treating the weapon as an implement that you can swap around with your other implements as necessary. You don’t need it to excel as a thaumaturge, but you can’t go wrong with it.
 
 - <Rating content="Initiate Benefit" ratings={[4]}/> The weapon implement comes out swinging with discount Reactive Strike. It’s better in some cases, given that it triggers on concentrate actions, can disrupt any action on a critical hit so long as it triggered the Interruption (except standing) and can even be used by ranged thaumaturges. You also get access to the implement’s critical specialisation at fifth level as an added bonus. A great damage booster, though be sure to have allies around who can help you guarantee that the ability activates.
@@ -1180,14 +1180,14 @@ Even with a high charisma, You generally want to rely on buff spells and those t
 - **Spellcasting Breadth** More spell slots are always a valuable option. They are also competing with other archetype feats on top of your normal pool. I rate these <Rating content="green" ratings={[3]} bold={false} stars={false}/> by default, so compare this to other feats the archetype offers to decide which one you’d like to pick.
 - <Rating content="Cantrip Expansion" ratings={[3]}/> A first level feat for most spellcasting classes which provides two additional cantrips. True members of these classes rarely need this feat, but an archetype only grants two by default and can benefit from a couple extra. If your ancestry already provides an innate cantrip, you can bump this down a step.
 
-<Rating content="Alchemist" ratings={[1]}/><br>
+##### <Rating content="Alchemist" ratings={[1]} bold={false}/>
 Alchemical items are fun, but thaumaturges are generally too dumb to meet this class’s attribute prerequisites. If you took an ancestry with an int boost (especially the elf), and/or are willing to take a hit to charisma, alchemical items are a fun addition to your toolkit, and you can bump this archetype’s rating to <Rating content="green" ratings={[3]} bold={false} stars={false}/>. You don’t have the actions or hands to use most of their items well in-combat, but Quick Bomber + a thrower’s bandolier can suffice, and mutagens are very powerful. Just prepare a bunch that you’ll use frequently out of combat or to hand out to allies. There’s far too many items for me to properly rank, but this is a useful <a href="https://docs.google.com/document/d/1dl7BydLgwVCmTQyOPRxqbXjd7XLG-xmESU4Svs-5P54/edit">guide</a>. Some personal recommendations are the silvertongue and cognitive mutagens, and the bloodhound mask can also be a solid pick, especially if you didn’t take the lantern, but it combines well enough with that too. You’ll want Expert and Master Alchemy pronto to keep your items relevant, especially since you can’t use Intensify Investiture with these. 
 
-<p/><Rating content="Barbarian" ratings={[2]}/><br>
+##### <Rating content="Barbarian" ratings={[2]} bold={false}/>
 Would a barbturge be fun? Absolutely. I think every class becomes funnier if you add a barbie to it. Unfortunately, Rage costs an action to activate and imposes a heavy -1 to AC for a middling damage bonus, middling temporary hit points and the inability to use concentrate actions that aren’t Seek. The thaumaturge doesn’t actually have many native actions that require concentration, save for IV. However, Rage means losing complete access to Recall Knowledge. This is very harsh for the vast majority of thaumaturge builds. You can technically circumvent this by using Diverse Lore, funnily enough, and using EV as a substitute recall knowledge. 
 Nonetheless, it’s possible to make this work, especially in a free archetype game. Barbarian offers you access to powerful instincts like the <Rating content="Elemental" ratings={[4]} bold={false}/> and <Rating content="Dragon" ratings={[3]} bold={false}/> instincts, as well as the <Rating content="Giant" ratings={[2]} bold={false}/> instinct if you really want to risk the permanent clumsy 1 on top of the rage penalty. You also get access to powerful feats like <Rating content="Sudden Charge" ratings={[4]} bold={false} stars={false}/>, which for all intents and purposes doubles your movement, <Rating content="Fast Movement" ratings={[3]} bold={false} stars={false}/>, <Rating content="Raging Athlete" ratings={[3]} bold={false} stars={false}/>, <Rating content="Reactive Strike" ratings={[4]} bold={false} stars={false}/> etc. You can certainly make this somewhat effective, especially in the right team composition, and you can put out some bonkers damage numbers, but it’s tricky and there are better archetypes to serve you. I do think this works well enough the other way around.
 
-<p/><Rating content="Bard" ratings={[4]}/><br>
+##### <Rating content="Bard" ratings={[4]} bold={false}/>
 Bust a move. The occult spell list offers a variety of self buffs and utility, and the bard caters to a variety of thaumaturge builds. Everyone loves composition cantrips, even if the thaumaturge can already provide some status bonuses on its own. They also provide fantastic support for recall knowledge on top of all their other goodies. I generally recommend that players pick Enigma as their initial muse, and Warrior, Maestro, or both through Multifarious Muse.
 While composition cantrips are fantastic, especially Courageous Anthem, the thaumaturge’s tight action economy and access to native status bonuses might not make it as appealing; However, these cantrips apply to a wide array of rolls all at once and effect all allies in a wide emanation. You can still make fantastic use of them on turns where an implement’s IV ability might not be as better situated, for example, and you can also take the feats that extend the cantrip’s duration.
 
@@ -1206,7 +1206,7 @@ While composition cantrips are fantastic, especially Courageous Anthem, the thau
 - <Rating content="Counter Perform" ratings={[2]}/> Bump this up a step if you took or plan to take Lingering Composition, since you’ll already have incentive to boost performance. Your will saves are already quite strong, which most auditory and visual effects target, but performance keys off charisma and this applies to your allies too. It’s a solid defensive reaction, <i>and</i> it nets you an extra focus point.
 - <Rating content="Inspirational Performance" ratings={[4]}/> A fantastic party wide status bonus to your offences and defences. Slightly redundant with certain thaumaturge features, but this is still a solid choice nonetheless.
 
-<p/><Rating content="Champion" ratings={[4]}/><br>
+##### <Rating content="Champion" ratings={[4]} bold={false}/>
 The champion is far more generous than most multiclass archetypes. The dedication alone gives you trained proficiency in heavy armour, which improves your armour class by one until level eleven and allows you to use the bulwark trait of full plate. You can get powerful healing actions and protective reactions at affordable levels.
 
 - <Rating content="Basic Devotion" ratings={[4]}/> The first feat you choose from the champion archetype is likely to be Divine Grace. It provides a helpful bonus to your saving throws as a reaction. Once you gain your champion’s reaction at sixth level you might retrain this for the first level feat associated with your cause, such as Ranged Reprisal for paladins, Weight of Guilt for redeemers, or Iron Repercussions for Regalia tyrants . You could also use Advanced Devotion to pick up both without much trouble.
@@ -1216,15 +1216,15 @@ The champion is far more generous than most multiclass archetypes. The dedicatio
 - <Rating content="Divine Ally" ratings={[3]}/> You can gain a free disrupting, returning, or shifting rune for your weapon with a blade ally. Returning and shifting can redefine your playstyle. Returning is a great boon for thrown weapon thaumaturges, freeing up your slots, and shifting allows you to target a host of traits to better suit your current combat. Don’t bother picking the other two allies; You can’t use shields and the champion’s companion progression will suffer horribly on an archetype. 
 - <Rating content="Divine Armour Expert" ratings={[2]}/> This feat is worse than it should be because the thaumaturge reaches expert in armour at level 11 instead of level 13. You had to slog through 3 levels of a lower armour class than most other thaumaturges. I would probably recommend picking up the Sentinel or Stalwart Defender archetypes at around level 10-12 instead; The Sentinel especially works well at the higher levels since you have access to more of its feats, such as Mighty Bulwark.
 
-<Rating content="Cleric" ratings={[2]}/><br>
+##### <Rating content="Cleric" ratings={[2]} bold={false}/>
 Wisdom casting on the divine list. The cleric offers one exceptional bonus: your deity’s spells. Virtually any deity with the knowledge domain is likely to have spells relevant to your interests as a thaumaturge, but you can make use of a variety of deities anyway. The thaumaturge’s MAD nature means that investing in wisdom can be a bit of a struggle, especially when options like the divine sorcerer exist; However, the cleric archetype does offer you divine spells <i>and</i> automatic access to their deity’s spells, unlike the sorcerer who has to take a feat for it.
 
 Unfortunately, outside of spellcasting and access to a host of domain spells, there’s not much here that interests the thaumaturge. Its feat list is especially poor, given that many of their best feats require doctrines you don’t follow and divine fonts you can never have. You can make it work, but it’s not going to be fantastic. Even the usual strength of the class, its ready access to spells without having to learn them or deal with a repertoire, is somewhat redundant with the thaumaturge’s easy utilisation of magic items and Scroll Esoterica.
 
-<Rating content="Druid" ratings={[2]}/><br>
+##### <Rating content="Druid" ratings={[2]} bold={false}/>
 Wisdom casting on the primal list. The druid’s feats don’t do a whole lot and primal casting is probably the worst choice for the thaumaturge since it’s so offensive, especially when it’s not charisma based. Pick up a primal sorcerer if you really want to or just invest in Scrolls and Trick Magic Item.
 
-<p/><Rating content="Fighter" ratings={[3]}/><br>
+##### <Rating content="Fighter" ratings={[3]} bold={false}/>
 The Fighter has a fantastic array of feats and metastrikes for the thaumaturge to pillage, but has a terrible start, requiring a +2 in both dexterity and strength to access a dedication that offers nothing save an extra skill. If you take the fighter, you expect to start with either very low constitution or a charisma modifier of potentially +2. Nonetheless, the fighter offers fantastic options for the offence-minded thaumaturge who doesn’t want to focus on charisma much outside of EV.
 
 Many of the fighter’s best feats are melee-exclusive. Between that and the strength prerequisite of the archetype, I expect most who take this archetype will use either a thrown weapon or a melee attack. Finesse thrown weapons like the starknife get the best of both worlds, using the fighter’s melee feats without sacrificing ranged damage, but other builds can work too.
@@ -1243,7 +1243,7 @@ Many of the fighter’s best feats are melee-exclusive. Between that and the str
 - **Advanced Maneuver:** Unfortunately, there aren’t a lot of fighter feats that cater to single handed weapon users that always have their hands full. Two standouts at the earlier levels are Parting Shot, especially for ranged weapon throwers, and Slam Down, which bypasses the MAP for strength turges. If you invested in Double Shot and stuck by the near dead feat till level 12, Triple Shot is a solid damage booster against a single target; However, you almost never want to use its three action version. Most other feats applicable to the thaumaturge have the press trait, which you aren’t great at using. If you are using free archetype however, level 20 gets you fantastic capstones. Pick your poison from feats like Agile Grace, Certain Strike, Crashing Slam, Tactical Reflexes etc. These specific feats are at least green or higher.
 - <Rating content="Diverse Weapon Expert" ratings={[1]}/> I truly don’t know who this feat is for. Spellcasters were getting any weapon proficiencies they wanted from their ancestries or a general feat anyway.
 
-<Rating content="Gunslinger (U)" ratings={[2]}/><br>
+##### <Rating content="Gunslinger (U)" ratings={[2]} bold={false}/>
 Like the class it is based off of, this archetype is uncommon. The gunslinger archetype also notably does not give you access to guns. It just gives you proficiency in them, which you already have. Much like the fighter, the dedication is just extra skills though with an easier prerequisite. You practically require this or the Unexpected Sharpshooter archetypes if you intend to use reload weaponry effectively.
 
 There’s not much you really want from here in Basic Shooting at first. Fake Out and Hit the Dirt! are two solid choices at this level. You likely picked the Pistolero or Sniper as your Way; You can pick up their initial deed in a free archetype game if you don’t want another gunslinger feat at level 6.
@@ -1252,27 +1252,27 @@ Level 8 is when your build finally starts coming together. Pick Risky Reload imm
 
 There is also a potential build here for bomber turges. You can take munitions crafter and munitions machinist for a bomber + quick draw thrower’s bandolier build, since the items do scale faster than they would with an alchemist past level 12, and you can also craft alchemical ammunition for use with feats like risky reload and the Tome IV. You don’t get the benefits of Expert Alchemy so you won’t really make good use of the items in the mid-levels, but at least you didn’t have to invest points in intelligence.
 
-<Rating content="Inventor (U)" ratings={[1]}/><br>
+##### <Rating content="Inventor (U)" ratings={[1]} bold={false}/>
 Once again, the +2 intelligence is a big ask for a mediocre answer. There are some really interesting feats and initial modifications for your weapon or armour is cool, but it’s just not enough. If you’re dedicated to the idea you can make it work a little, but I don't recommend it at all. Stick to your magical stuff.
 
-<p/><Rating content="Investigator" ratings={[1]}/><br>
+##### <Rating content="Investigator" ratings={[1]} bold={false}/>
 Horrible attribute prerequisite and everything this archetype does you either already do better or can pick up elsewhere. Additionally, picking this archetype earns you the disrespect of every other thaumaturge player in existence.
 
-<p/><Rating content="Kineticist" ratings={[2]}/><br>
+##### <Rating content="Kineticist" ratings={[2]} bold={false}/>
 You can’t make good use of the kineticist’s combat impulses, even the ones not reliant on your class DC, because you don’t have the free hands for it, as well as many requiring you to spend action to sustain them, which is untenable. Still, there are some useful low level impulses that automatically heighten to max because it uses your class level to determine impulse effects. You can use this archetype to access heavy armour level defences on a strength build, for example, and you get some decent stances like Geological Attunement, grab a familiar, or even get some solid out of (or in if you’re desperate enough) combat healing capabilities. You can certainly find some interesting tools here.
 
-<p/><Rating content="Magus" ratings={[1]}/><br>
+##### <Rating content="Magus" ratings={[1]} bold={false}/>
 These ratings might seem harsh, but the main draw of Spellstrike is not really that worth it to the thaumaturge. Their base accuracy isn’t fantastic and they much prefer making multiple attacks over one single big one that only works once per minute, and you’re only taking the magus archetype because you want spellstrike. Also requires +2 intelligence to really worsen the deal.
 
-<p/><Rating content="Monk" ratings={[2]}/><br>
+##### <Rating content="Monk" ratings={[2]} bold={false}/>
 Another mediocre option for the thaumaturge. You don’t have the action compression and mobility boosters the monk does to make up for constantly devoting an action to enter a stance, and the ki spells, while nice, are nothing irreplaceable. Flurry of Blows, while neat as an additional chance to strike a target for a single action, suffers MAP <i>and</i> combines the damage if both attacks hit for the purposes of determining weaknesses. This doesn’t even get into the double prerequisite you’re required to take for the archetype, on top of most stances requiring you to be unarmoured. Either take the Martial Artist archetype, or use the Aiuvarin versatile heritage and take multitalented to get Flurry of Blows at level 10, but that’s a lot of hoops to jump through for a rather meh ability on your class.
 
-<p/><Rating content="Oracle" ratings={[2]}/><br>
+##### <Rating content="Oracle" ratings={[2]} bold={false}/>
 Being a charisma class, the thaumaturge can make good use of the oracle. If you want to access revelation spells, there are some mysteries that can work well enough; The only one you want to outright avoid is ancestors, otherwise most minor curses are manageable depending on your build. However, avoid the moderate curse effect whenever possible, as being permanently off-guard is very dangerous, especially combined with other effects of your minor curse.
 
 The main draw of Oracle is <Rating content="Bespell Weapon" ratings={[3]} bold={false}/>, especially for multiattack ‘turges, but you can also access it from the Sorcerer class. <Rating content="Divine Access" ratings={[2]} bold={false}/> might be nicer if it wasn’t so easy for you as a thaumaturge to get access to a lot of these spells anyway, especially with the introduction of spellhearts. Once again, you can certainly do worse, but you sure can do a whole lot better.
 
-<p/><Rating content="Psychic" ratings={[4]}/><br>
+##### <Rating content="Psychic" ratings={[4]} bold={false}/>
 Always set the psychic’s spellcasting attribute to charisma unless you are a masochist. The psychic provides reliable means for castaturges to contribute to the party’s damage output in the form of amped cantrips. You only get one cantrip with a restricted selection, but it’s a better than average cantrip since it can -practically speaking- be converted into a focus spell. No other multiclass archetype offers a focus spell on the dedication alone. This archetype does lose steam in free archetype games since there’s not a whole lot of options outside the spellcasting and cantrips, but you can almost never go wrong with more spells.
 
 **Conscious Minds:**<br>
@@ -1289,7 +1289,7 @@ The psychic archetype is the only multiclass spellcasting archetype to lack a br
 At higher levels, Strain Mind can let you cast amped cantrips more often. However, Psi Development can get you an extra focus point and cantrip. Unless you find a need to use more than two amped cantrips per fight, you shouldn’t need Strain Mind.
 - <Rating content="Psi Development" ratings={[3]}/> Get an extra psi cantrip; you’ll probably just pick the other base cantrip since most amped cantrips don’t suit martials. You also get an extra focus point with which to use it, which is arguably the bigger draw.
 
-<Rating content="Ranger" ratings={[3]}/><br>
+##### <Rating content="Ranger" ratings={[3]} bold={false}/>
 The dedication gives you access to the hunt prey action. Without the benefits of an edge, it provides only extra range with ranged weapons and circumstance bonuses to tracking. The latter is situational, but useful when it comes up. The former is a lot more helpful; this greatly expands the effective range of ranged turges, and is especially useful to thrown weapon builds. An initial turn consisting of EV/Stride/Strike can now become EV/Hunt Prey/Strike, which is far safer.
 
 This makes the ranger a surprisingly solid option for thrown weapon turges. They have a lot of good feats that improve your effective range and give you access to Quick Draw, which combines well with a Thrower’s Bandolier. The range increase also applies to reload weapons, but most feats that support that are either two actions or work better with two handed weaponry, and so don’t combine well with the thaumaturge’s tight action economy or kit; unless you had tracks to follow before combat started, and that only applies against one target, you should stick with Reload 0 weapons.
@@ -1318,7 +1318,7 @@ The ranger also has some nice support for RK builds, which is most thaumaturges.
 </ul>
 - <Rating content="Master Spotter" ratings={[1]}/> You got this three levels ago.
 
-<Rating content="Rogue" ratings={[4]}/><br>
+##### <Rating content="Rogue" ratings={[4]} bold={false}/>
 The rogue archetype is arguably the strongest MC archetype in the game when it comes to versatility; There isn’t a single class in the system that can’t find something good from it.
 
 Unlike many other rogues, the thaumaturge is quite solid for ranged weapon users; Divine Disharmony provides a reliable source of off-guard to proc Sneak Attack damage with. Combined with the rogue’s Strong Arm and Quick Draw feats, the rogueturge has some solid ranged firepower. It is also well used with agile/finesse melee turges, and has a host of feats supporting these combat styles. It also provides the powerful Skill Mastery feat for skill monkey turges.
@@ -1348,10 +1348,10 @@ Unlike many other rogues, the thaumaturge is quite solid for ranged weapon users
 - <Rating content="Uncanny Dodge" ratings={[3]}/> You can’t be flanked and don’t suffer defensive penalties from hidden creatures. Combined with the lantern you’ve got a solid array of defences against sneaky foes. A solid choice, especially in free archetype games and for melee turges.
 - <span/><Rating content="Evasiveness" ratings={[4]}/> Improve your reflex saving throws to master. You can’t turn successes into critical successes, but this was your worst save and a +2 bonus is very solid.
 
-<Rating content="Sorcerer" ratings={[4]}/><br>
+##### <Rating content="Sorcerer" ratings={[4]} bold={false}/>
 Charisma based casting to every spell tradition. This is the best way to access the arcane and primal traditions with full archetype casting. Though the majority of the sorcerer’s feats are mediocre, you can do well enough with just the basic spellcasting feats anyway. You can generally just pick whatever bloodline you want since the tradition is the main thing you’re after. Most of their focus spells don’t do much unless you’re a dedicated castaturge. However, <Rating content="Diabolic Edict" ratings={[3]}/> is a fun pick. Entice an enemy to leave the combat by offering them promising rewards for a whole round; Even if they refuse, they take a penalty to all their attacks and skill checks (including DCs). You can also use this as a pseudo guidance out of combat, or even combat in a pinch. When it comes to feats, most options are whatever. You do get access to <Rating content="Bespell Strikes" ratings={[3]}/> which can be nice, especially for multiattack turges, but if you take this feat be prepared to invest into the spellcasting feats to the fullest, as well as your magical spellcasting items.
 
-<Rating content="Swashbuckler" ratings={[3]}/><br>
+##### <Rating content="Swashbuckler" ratings={[3]} bold={false}/>
 The swashbuckler has quite a bit to offer finesse turges. You get panache from the dedication feat, which improves your movement speed when active. If you don’t want to take a spellcasting archetype, or invest into Trick Magic Item and/or scrolls of tailwind, this is a reliable status bonus to your speed.
 
 Most of the styles are fine, though Battledancer and Wit will lag a bit behind the others because their panache-generating skill actions aren’t as intrinsically useful, though they do have good class feats so they can be worth the investment. I don’t recommend the Gymnast because you’re far too MAD to make use of that style efficiently, especially since its panache action affects your MAP.
@@ -1376,7 +1376,7 @@ Alternatively, you could avoid using melee combat at all. Just avoid taking fini
 - <Rating content="Swashbuckler's Speed" ratings={[2]}/> If you couldn’t get this elsewhere, might as well pick it up here. Movement Speed bonuses are always good, but this is a bit high level for my taste, especially when you already get a decent bonus from the dedication itself.
 - <Rating content="Evasiveness" ratings={[4]}/> Improve your reflex saving throws to master. You could have gotten it through the rogue archetype.
 
-<Rating content="Summoner" ratings={[4]}/><br>
+##### <Rating content="Summoner" ratings={[4]} bold={false}/>
 Too many people decry the archetype due to its lack of Act Together and the Eidolon’s poor generic combat capabilities. There’s far more to this baby than just that. Eidolons share all of your skill proficiencies, <i>including</i> Esoteric Lore. This basically means that out of combat, your eidolon provides you what is effectively an at-will fortune effect on every recall knowledge check you make, or any skill check in general. Furthermore, once one of you fails a check, especially on RK, the other can continue to make checks. The best eidolon for this purpose are the eidolons with +2 intelligence; Namely, the Cunning Dragon and the Scribe of the Dead Psychopomp, who also have decent Wisdom.
 
 You can’t use the eidolon well in combat, given your tight action economy. Nonetheless, it is an excellent tool to any thaumaturge’s kit, especially if you wish to be a skill monkey.
@@ -1402,17 +1402,17 @@ You can’t use the eidolon well in combat, given your tight action economy. Non
 - <Rating content="Signature Synergy" ratings={[3]}/> Your eidolon gets some extra features. Airborne form is the obvious choice, but if you have Free Archetype Ever-Vigilant Senses is also decent.
 <Rating content="Master Summoner Spellcasting" ratings={[2]}/> As Expert Summoner Spellcasting.
 
-<Rating content="Witch" ratings={[1]}/><br>
+##### <Rating content="Witch" ratings={[1]} bold={false}/>
 Worse Sorcerer for the most part. If you wanted prepared casting that bad you could just pick up Scroll Esoterica. The dedication does give you a familiar, but you could already get that one too. If an archetype requires intelligence, it’s generally not for you. At least it’s better than the wizard.
 
-<p/><Rating content="Wizard" ratings={[1]}/><br>
+##### <Rating content="Wizard" ratings={[1]} bold={false}/>
 You are better than an Intelligence archetype. You are better than an Intelligence archetype. You are better than an Intelligence archetype.
 
 #### Other:
 Unlike multiclass archetypes, generic archetypes tend to have decent benefits right out the gate, but less versatility. I won’t cover every archetype, but I will cover ones that are appropriate to the thaumaturge’s flavour or exceptionally useful, as well as highlight some traps you should avoid.
 Archetype feats you access at higher levels are generally only slightly below par compared to most thaumaturge feats you can access. Be sure to compare the rankings for feats here to the feats your class actually gets when picking and choosing from an archetype.
 
-<Rating content="Acrobat" ratings={[3]}/><br>
+##### <Rating content="Acrobat" ratings={[3]} bold={false}/>
 A surprisingly decent pick for dexturges, acrobat advances a skill you were likely going to invest in anyway. Tumbling Through is decent enough to deal with moving around foes without spending extra actions, with a solid critical success effect; as a thaumaturge, you are very good at finding out which foes you’ll want to use tumble through on most often. It’s not the greatest choice for a free archetype, but still some decent pick ups here and there. I wonder what sort of acrobat picks up monster hunting as their new (side?) gig. Maybe your travelling show was hunted by werewolves and now you have sworn revenge on all creatures of evil.
 
 - <Rating content="Contortionist" ratings={[2]}/> Squeezing is so situational that those benefits might as well have been removed to save on word count. Leaving a foe off-guard when you escape is pretty neat, but since you’re suffering the MAP you might prefer to make some other attack instead.
@@ -1421,7 +1421,7 @@ A surprisingly decent pick for dexturges, acrobat advances a skill you were like
 - <Rating content="Tumbling Strike" ratings={[3]}/> Make an acrobatics check to move behind an enemy you are adjacent to (without triggering reactions) and strike them for one action. If you critically succeed, the foe is off-guard against the strike. Great action compression, and can be used to get out of being flanked. 
 - <Rating content="Tumbling Opportunist" ratings={[2]}/> You don’t have free hands to trip with. If you are wielding a weapon with the trip trait like a whip, or your GM allows you to trip them with your hands full, this is an easy <Rating content="blue" ratings={[4]} bold={false} stars={false}/>.
 
-<Rating content="Beastmaster" ratings={[2]}/><br>
+##### <Rating content="Beastmaster" ratings={[2]} bold={false}/>
 Even with your tight action economy, an animal companion is a great pick. Many of them have useful support benefits and advanced maneuvers that don’t even require them to actually strike a foe, and can provide extra skill support, especially in the form of maneuvers, which is a great choice for a dexturge. If you are looking for a mount I’d sooner suggest cavalier, but you can still make this work.
 
 - <Rating content="Additional Companion" ratings={[2]}/> Get a second animal companion. You can only have one active at a time. I wouldn’t really want to spend a feat for this; you generally ought to know what companions will be useful for your adventures, but you might appreciate the versatility in movement speeds, especially if you’re looking to use mounts.
@@ -1439,7 +1439,7 @@ Even with your tight action economy, an animal companion is a great pick. Many o
 - <Rating content="Specialised Beastmaster Companion" ratings={[4]}/> Feat tax. Never miss these. You might choose it again in a free archetype game for more specialisations, but it’s not necessary.
 - <Rating content="Lead the Pack" ratings={[1]}/> You have two animal companions active at once. Extra bodies on the field can be nice, but you simply do not have the action economy to make this rather overpriced feat worthwhile.
 
-<Rating content="Cavalier" ratings={[3]}/><br>
+##### <Rating content="Cavalier" ratings={[3]} bold={false}/>
 If you are running a melee build, the cavalier has notable advantages over the beastmaster, though even ranged turges can make excellent use of the archetype. Mounted builds compensate for the flaws of melee; you spend far less actions moving into melee and, thanks to certain cavalier feats, can quickly move yourself out of danger after striking. Your mount isn’t as good at attacking because you both share MAP, but there isn’t any reason you’d sacrifice a strike for your mount to make one anyway.
 
 Some important notes to remember when fighting while mounted. You don’t benefit from the reach trait on most weapons when on a mount that is Large or larger. Additionally, large mounts might not work very well in many urban and underground adventuring environments, such as dungeons, but you should just talk with your GM about this beforehand. It’d be an asshole move to force you to lose access to many of your feats frequently nonetheless.
@@ -1455,7 +1455,7 @@ Some important notes to remember when fighting while mounted. You don’t benefi
 - <Rating content="Specialised Mount" ratings={[4]}/> Feat tax. Make your companion even better.
 - <Rating content="Legendary Rider" ratings={[3]}/> You are permanently quickened and can only use the action to Command an Animal. This does not interact with special abilities like Cavalier’s Charge, but free actions are still great.
 
-<Rating content="Herbalist" ratings={[3]}/><br>
+##### <Rating content="Herbalist" ratings={[3]} bold={false}/>
 You can use nature to treat wounds. More importantly, you gain access to alchemical healing items. If you want to fill in as a healer but don’t want the investment of the medic or being locked to the Chalice, this is a solid archetype to pick up, requiring minimal investment for some useful healing capabilities. You play similar to an alchemist, handing out your healing items to other people who can use them better or need to use them more frequently, especially given your lack of free hands. It’s especially great in wilderness games, as it doubles the amount of infused reagents you get to make every day, as well as boosting your ability to use nature, which is far easier to manage than crafting for most turges. It’s also very thematic.
 
 - <Rating content="Fresh Ingredients" ratings={[2]}/> Boost the treat wounds action when using Natural Medicine. In all honesty, you aren’t likely to actually boost nature unless you really want to craft herbal items; Natural Medicine was simply a feat tax. You could also have just spent these reagents on creating a normal elixir of life instead, which will generally heal more on average than critically succeeding on a treat wounds check, especially once you get Expert Herbalism. The only reason this isn’t red is because it’s a skill feat.
@@ -1464,7 +1464,7 @@ You can use nature to treat wounds. More importantly, you gain access to alchemi
 - <Rating content="Endemic Herbs" ratings={[2]}/> Get bonuses vaguely themed to the environment you’re in. Most of these only last a minute so despite the solid bonuses they’re quite paltry. I’d rather spend the batches on more herbal items than rely on buffs that usually only apply to combat where you are very unlikely to have a free hand for such work.
 - <Rating content="Expert Herbalism" ratings={[4]}/> The elixir of life formulas are redundant with the remaster’s changes to formulas, but you also improve your advanced alchemy level so that you can use them and other powerful items like soothing tonics and the like. A must-pick for any Herbalist, because without it all all your items do is wake up allies from being downed.
 
-<p/><Rating content="Marshal" ratings={[2]}/><br>
+##### <Rating content="Marshal" ratings={[2]} bold={false}/>
 The thaumaturge makes fantastic use of the Marshal. It is fantastic for a more support oriented turge who still wishes to maintain their offence and synergises very well with some implements.
 
 The Marshal, especially its initial benefits, inevitably draw comparison to the Regalia implement, which offers many similar or outright stronger bonuses. However, the Marshal is an archetype and the regalia is an implement, effectively a subclass. It could as easily be construed that the Marshal gives you an extra implement for the price of a few low level class feats and some additional powerful benefits. Nonetheless, they both work with each other well enough, and the archetype still offers plenty of goodies for any thaumaturge build.
@@ -1486,7 +1486,7 @@ Additionally, the dedication gives you an extra skill at expert proficiency, jus
 - <Rating content="Tactical Cadence" ratings={[4]}/> For one action, you give your party a 7th level haste for one round. Even though this doesn’t apply to you, it is fantastic. You might even consider using this every round just for the sheer power it gives your team, especially if they’re a larger party or use minions.
 - <Rating content="Target of Opportunity" ratings={[3]}/> It’s really weird that the otherwise melee focused Marshal ends with a feat for ranged turges. This is still a fantastic reaction for them, although if you are using Share weakness or otherwise having both attacks trigger the same weakness combining the damage can hurt its value. Still a great use of your reaction, especially if you didn’t take a reaction implement. 
 
-<Rating content="Martial Artist" ratings={[3]}/><br>
+##### <Rating content="Martial Artist" ratings={[3]} bold={false}/>
 If you want to use unarmed attacks but don’t want to use one from an ancestry, this is the archetype for you. Stances are a bit harder for melee turges to make maximum use of because you usually want to EV, stride, and then strike, but the dedication itself improves your base unarmed attacks well enough so you can always enter a stance on your second turn. However, a lot of stances require you to be unarmored, which greatly reduces your armour class given your lower dexterity, at least until level 15 when you can get it to +5 for dexturges. There are still enough goodies here that it’s a viable pick for a free archetype game, at least at the earlier levels, and in a normal game you still have excellent pick ups at certain points.
 
 - <Rating content="Powder Punch Stance (U)" ratings={[2]}/> You must be from Alkenstar or the Mana Wastes to access this feat. I’m not sure if it’s a typo or something because AP content is weird like that but you don’t actually need an action to enter this stance, and all it does is add a little fire damage and make your shoves better on a critical success. Has some fun feats though, and is accessible right from level 2.
@@ -1513,7 +1513,7 @@ Of course, it faces the issue all stances do, in that you are unlikely to benefi
 - <Rating content="Path of Iron" ratings={[1]}/> A three-action activity that splits your damage amongst multiple targets. Not worth it, especially for a class as focused on a single target as you are.
 - <Rating content="Mountain Quake" ratings={[3]}/> This is modest AoE damage,but it costs one action and can even knock foes prone. It is hindered by the requirement that all foes be on the ground, and the fact that you had to take mountain stance for this.
 
-<Rating content="Mindsmith" ratings={[3]}/><br>
+##### <Rating content="Mindsmith" ratings={[3]} bold={false}/>
 You can generate a “mind weapon” to use in battle. The flavour is quite fitting for most thaumaturges, being so resolute and firm in your beliefs and knowledge that you materialise your own instrument of death. Choose any of the one handed weapons, depending on your build I would generally suggest picking the club for its reliable damage type and solid critical specialisation effect, if you can access that.
 
 The dedication itself doesn’t offer you much. You’re trading weapon traits for what is basically the best weapon for concealing or smuggling. It’s a good boon, but not something great. To make maximum use of the keepsake, you could declare it as something like your undergarments to ensure maximum safety. Most thaumaturges will probably choose something more flavourful like something on their esoterica (such as a pendant or necklace) or even a non-magical implement.
@@ -1530,12 +1530,12 @@ However, the archetype offers fantastic customizability to your weapon if you sp
 - <Rating content="Metallic Invisionment" ratings={[2]}/> Your mind weapon counts as silver or cold iron. This feat is rather high level for its effect, but you might need or want it if your campaign is themed around specific foes, which you should be able to ascertain by this point.
 - <Rating content="Advanced Runic Mind-Smithing" ratings={[2]}/> The holy and unholy runes are alright, but the other two are useless with the removal of alignment in the remaster. You also get to pick the greater versions of the energy runes, which are particularly useful for powering through resistances (take that Breached Defenses!). You additionally get to swap out the mind smithing rune once per day out of combat, which is useful if your party makes good use of scouting. Even so, this is still very meh for being such a high level feat. I’d only deign to pick this in a free archetype game.
 
-<Rating content="Pactbinder (U)" ratings={[1]}/><br>
+##### <Rating content="Pactbinder (U)" ratings={[1]} bold={false}/>
 Excellent thematic compatibility aside (because this archetype actually existed as a feat chain for the thaumaturge in playtest) this archetype is unfortunately rather underwhelming. The dedication is pretty good because it allows you to advance two useful skills to expert, but Binding Vow is very much just flavour stuff to work with your GM with. 
 
 In fact, that’s a problem with a lot of the feats here. They’re all mostly flavour stuff until you get to the higher levels. This is an especially weird pick for free archetype because that means you are just making random pacts wherever you go. There’s also the issue of some of the pacts in this archetype requiring you to do stuff that might clash with the adventure’s demands or the goals of your party in return for very mediocre bonuses. I’d recommend just reflavouring your base abilities or another archetype or something like that instead.
 
-<Rating content="Sentinel" ratings={[3]}/>
+##### <Rating content="Sentinel" ratings={[3]} bold={false}/>
 The Remaster has made the sentinel slightly less valuable ever since the Armor Proficiency general feat provided scaling to expert at level 13; unless you know for a fact that your game is going to level 19, you should probably just stick with that feat. However, the thaumaturge can still make decent use of sentinel over the Armor Proficiency feat since the archetype proficiency scales to expert in armour at level 11 instead of level 13, and this archetype will provide that same scaling to heavy armour at level 11 and 19 unlike the general feat. Heavy armour is a great choice on any strength thaumaturge, especially thanks to the full plate’s bulwark trait, which provides a great bonus to your very poor reflex saves.
 
 However, the thaumaturge cannot make good use of full plate until level 5, when they can bump their strength to +4 (or use the gradual ability boost rules). The dedication is still a great pick for the powerful scaling benefits, but you might prefer to take it at level 4 instead and take a more immediately useful feat. It’s also incredibly middling in free archetype games; if you are playing in one, I would advise just picking up the champion archetype or the armor proficiency (and retrain it later) feat before taking sentinel around levels 8-12. You might also like the Stalwart Defender archetype if you have access to it. 

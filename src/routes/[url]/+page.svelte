@@ -96,7 +96,7 @@
 	:global(h5) {
 		font-size: 17.5px;
 		font-family: "Imprint MT Shadow", Times, serif;
-		font-weight: lighter!important;
+		font-weight: normal;
 		margin-bottom: 6px;
 	}
 	:global(h3+p){
