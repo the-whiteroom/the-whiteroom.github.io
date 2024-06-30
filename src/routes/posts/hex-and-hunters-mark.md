@@ -3,6 +3,7 @@ title: "Hex and Hunter's Mark"
 tags:
 - D&D 5e
 - Spells
+- One D&D
 related:
 ---
 <script>

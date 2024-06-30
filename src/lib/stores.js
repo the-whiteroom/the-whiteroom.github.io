@@ -72,6 +72,14 @@ export const cards = writable([
         ],
         tags : ['D&D 5e', 'Spells']
     },
+    {
+        title : "Hex and Hunter's Mark",
+        blurb : [
+            "With the release of One D&D in sight, two spells in particular have been getting a lot of attention. Both of these spells were trap options in 5th edition, and despite being nerfed in One D&D, look to be set to become a core part of two of the game's most popular classes.",
+            "These spells are, of course, Hex and Hunter's Mark.",
+        ],
+        tags : ['D&D 5e', 'Spells','One D&D']
+    },
     //{
     //    title : "PF2e: it's just better",
     //    blurb : [

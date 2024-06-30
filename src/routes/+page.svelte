@@ -9,6 +9,7 @@
     let tags = {
         "D&D 5e": true,
         "PF2e": true,
+        'One D&D': false,
         "Meta": false,
         "Spells": false,
         "Classes": false,
