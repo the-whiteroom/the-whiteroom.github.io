@@ -13,7 +13,7 @@ const fighter_crit_damage = 3.5;
 const fighter_DPR = fighter_attacks.map((e,i) => e*(fighter_hit[i]*fighter_hit_damage[i] + crit*fighter_crit_damage));
 
 const gloom_dex = levels.map(l => 3+(l>=8)+(l>=12));
-const gloom_attack = prof.map((e,i) => e+gloom_dex[i]+2-5*(levels[i]>=4));
+const gloom_attack = prof.map((e,i) => e+gloom_dex[i]+2*(levels[i]>=2)-5*(levels[i]>=4));
 const gloom_hit = gloom_attack.map((e,i) => (21-ac[i]+e)/20);
 const gloom_attacks = levels.map(l => 2+(l>=5)); // TODO: account for Stalker's Flurry
 const gloom_hit_damage = levels.map((e,i) => 3.5+gloom_dex[i]+10*(e>=4));
