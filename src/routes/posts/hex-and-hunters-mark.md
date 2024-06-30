@@ -30,7 +30,7 @@ Secondly, they cost a spell slot, neither of which either class can spare.
 ### What problems are unique to *Hunter's Mark*?
 The biggest problem with *Hunter's Mark* is simply that Rangers don't have many bonus actions. All Rangers worth their salt will take Crossbow Expert, which quite literally doubles their damage output until level 5, and remains an incredibly potent option beyond that. *Hunter's Mark* competes for a bonus action not only on the turn it's cast, but also whenever you kill a monster - which will be a very frequent occurrence for any competent damage dealer.
 
-If you never kill monsters, and never drop concentration, *Hunter's Mark* generally takes around 4 turns to just break even with Favored Foe. Damage in the first few rounds of combat is far more effective, as it removes more enemy turns. If you are actually killing monsters (which you will be), *Hunter's Mark* is always a damage downgrade.
+If you never kill monsters, and never drop concentration, *Hunter's Mark* generally takes around 4 turns to just break even with Favored Foe. Damage in the first few rounds of combat is far more effective than damage in later rounds, since damage that isn't delayed removes enemy turns faster. If you are actually killing monsters (which you will be), *Hunter's Mark* is always a damage downgrade.
 
 <HuntersMark/>
 
