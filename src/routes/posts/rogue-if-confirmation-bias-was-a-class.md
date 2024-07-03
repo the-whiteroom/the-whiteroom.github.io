@@ -60,7 +60,7 @@ However, Rogues find it hard to generate advantage as well. The best way is Stea
 
 To deal with this issue, some subclasses change the rules around Sneak Attack.
 - Arcane Trickster can generate advantage without consuming a bonus action via *Find Familiar*, with the caveat that any vaguely intelligent enemy will just shoot the familiar, opportunity attack it, or Ready an attack for when it comes into reach.
-- Swashbuckler can generate Sneak Attack without advantage in melee, but also can't easily generate advantage except via Steady Aim, which is tantamount to suicide in melee.
+- Swashbuckler can generate Sneak Attack without advantage in melee, but also can't easily generate advantage except via Steady Aim, which is a death sentence in melee.
 - Phantom can, a very limited number of times per long rest, deal a smaller amount of additional damage to another target with Sneak Attack.
 - Inquisitive can Sneak Attack without advantage. This frees up its bonus action for Crossbow Expert.
 
